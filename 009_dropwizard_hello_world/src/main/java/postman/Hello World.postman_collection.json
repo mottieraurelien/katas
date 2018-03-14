@@ -1,0 +1,109 @@
+{
+	"info": {
+		"name": "Hello World",
+		"_postman_id": "386ef76c-c0c3-41b6-95ba-aca4cc8846b4",
+		"description": "Collection Postman pour tester le Hello World avec Dropwizard.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Appel du microservice",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "907a784d-4f20-4b46-8531-858af0635e61",
+						"type": "text/javascript",
+						"exec": [
+							"// 1 - Vérification du code HTTP retourné par le microservice :",
+							"// pm.test(\"L'opération a échouée.\", function() {",
+							"    ",
+							"//     // Nous attendons un 422 en retour du POST (entité ne pouvant pas être parsée correctement) :",
+							"//     pm.response.to.have.status(422);",
+							"    ",
+							"// });",
+							"    ",
+							"// 2 - Vérification de l'erreur retourné par le microservice :",
+							"// pm.test(\"L'opération a échoué pour la raison attendue (le champs name doit être spécifié).\", function() {",
+							"    ",
+							"//     // Récupération du body de la réponse sous forme d'un flux JSON :",
+							"//     var responseJson = pm.response.json();",
+							"    ",
+							"//     // Nous vérifions le contenu de l'erreur :",
+							"//     pm.expect(responseJson.errors[0]).to.eql(\"name ne peut pas être vide\");",
+							"    ",
+							"// });"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\" : \"part_code_{{$guid}}\"\n}"
+				},
+				"url": {
+					"raw": "http://{{domain}}/{{resource}}/?name=toi",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"{{resource}}",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "toi",
+							"equals": true
+						}
+					]
+				},
+				"description": "Appel du microservice au moyen d'une requête GET."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5fad619c-2744-49e8-b5e2-e66e59063563",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "28814cc3-f2de-4b9c-88f6-39220935badc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9fffc126-4c78-453a-8783-75fbf587da11",
+			"key": "resource",
+			"value": "hello-world",
+			"type": "text",
+			"description": ""
+		}
+	]
+}

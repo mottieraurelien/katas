@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Corrections mineures.">
+      <change afterPath="$PROJECT_DIR$/012_generics/012_generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/carbon_it$All_in_006_maxime_mader_monopoly.coverage" NAME="All in 006_maxime-mader-monopoly Coverage Results" MODIFIED="1520587593678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/katas$All_in_008_monopoly_event_sourcing.coverage" NAME="All in 008_monopoly_event_sourcing Coverage Results" MODIFIED="1521217385190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/carbon_it$PlayerTest.coverage" NAME="PlayerTest Coverage Results" MODIFIED="1520587200143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/carbon_it$GameTest.coverage" NAME="GameTest Coverage Results" MODIFIED="1520585662159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="false" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="true" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testdb" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testdb" type="feb32156:DbDataSourceImpl" />
+        <item name="TESTDB: database" type="c8e2528e:H2ImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testdb" type="feb32156:DbDataSourceImpl" />
+        <item name="TESTDB: database" type="c8e2528e:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="4f7ca4f5:H2ImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>query_find_all_users</find>
+      <find>return price;</find>
+      <find>MethodSource</find>
+      <find>Stream&lt;Arguments&gt;</find>
+      <find>assertThr</find>
+      <find>@Override</find>
+      <find>shu</find>
+      <find>inputBalance</find>
+      <find>&quot;, 0)</find>
+      <find>Integer inputBalance</find>
+      <find>signum</find>
+      <find>40</find>
+      <find>getName</find>
+      <find>orphanRemoval</find>
+      <find>initialize</find>
+      <find>PARTS</find>
+      <find>DW_DEFAULT_NAME</find>
+      <find>compareTo</find>
+      <find>_makes_</find>
+      <find>carbon</find>
+      <find>Carbon IT has provided</find>
+      <find>Scenario</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>0</replace>
+      <replace>BigDecimal inputBalance</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\aurel\IdeaProjects\carbon-it\002_gs-accessing-data-jpa</dir>
+      <dir>C:\Users\aurel\GitProjects\katas\000_treasures_hunt</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="001_in-memory-db-demo-application/invalid/Spring" />
+      <facet id="002_gs-accessing-data-jpa/invalid/Spring" />
+      <facet id="003_thejavageek-jpa-entities/invalid/Spring" />
+    </ignored-facets>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Odvn5XapPEflDg3uq2M5YKjVz9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/012_generics" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aurel\GitProjects\carbon-it\000_treasures_hunt\src\test\java" />
+      <recent name="C:\Users\aurel\GitProjects\carbon-it\000_treasures_hunt\src\test\resources" />
+      <recent name="C:\Users\aurel\GitProjects\carbon-it\000_treasures_hunt\src\main\java" />
+      <recent name="C:\Users\aurel\IdeaProjects\carbon-it\009_dropwizard_hello_world\src\main\java\postman" />
+      <recent name="C:\Users\aurel\IdeaProjects\carbon-it\010_dropwizard_parts\src\main\java\postman" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="domain" />
+      <recent name="event" />
+      <recent name="" />
+      <recent name="app" />
+      <recent name="com.example.h2" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="domain" />
+      <recent name="exception" />
+      <recent name="event" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aurel\GitProjects\katas\005_projet-panda" />
+      <recent name="C:\Users\aurel\GitProjects\katas\011_dropwizard_blog_mongo" />
+      <recent name="C:\Users\aurel\GitProjects\katas\010_dropwizard_parts" />
+      <recent name="C:\Users\aurel\GitProjects\katas\009_dropwizard_hello_world" />
+      <recent name="C:\Users\aurel\GitProjects\katas\008_monopoly_event_sourcing" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GameMasterTest">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoubleDiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="008_monopoly_event_sourcing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.DoubleDiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="008_monopoly_event_sourcing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="processor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="processor" />
+      <option name="MAIN_CLASS_NAME" value="processor.EventProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameMasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="008_monopoly_event_sourcing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.GameMasterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="008_monopoly" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="008_monopoly" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="introduction_jpa" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.Application" />
+      <module name="002_gs-accessing-data-jpa" />
+      <envs />
+    </configuration>
+    <configuration name="H2InMemoryDbDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.h2.H2InMemoryDbDemoApplication" />
+      <module name="001_in-memory-db-demo-application" />
+      <envs />
+    </configuration>
+    <configuration name="ThejavageekJpaEntitiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thejavageek.jpa.entities.ThejavageekJpaEntitiesApplication" />
+      <module name="003_thejavageek-jpa-entities" />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DoubleDiceTest" />
+      <item itemvalue="JUnit.EventProcessorTest" />
+      <item itemvalue="JUnit.GameTest" />
+      <item itemvalue="JUnit.PlayerTest" />
+      <item itemvalue="JUnit.GameMasterTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameMasterTest" />
+        <item itemvalue="JUnit.DoubleDiceTest" />
+        <item itemvalue="JUnit.EventProcessorTest" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.PlayerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\aurel\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="" />
+      <created>1516129192372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516129192372</updated>
+      <workItem from="1516129195431" duration="1578000" />
+      <workItem from="1516555366933" duration="264000" />
+      <workItem from="1516555688490" duration="888000" />
+      <workItem from="1516557556257" duration="15000" />
+      <workItem from="1516557573697" duration="3257000" />
+      <workItem from="1516560834903" duration="131000" />
+      <workItem from="1516560967755" duration="3171000" />
+      <workItem from="1516564186485" duration="183000" />
+      <workItem from="1516564371854" duration="83000" />
+      <workItem from="1516564456540" duration="78000" />
+      <workItem from="1516565202717" duration="180000" />
+      <workItem from="1516565436807" duration="191000" />
+      <workItem from="1516565660871" duration="53000" />
+      <workItem from="1516566168355" duration="709000" />
+      <workItem from="1516567060262" duration="177000" />
+      <workItem from="1516581609039" duration="929000" />
+      <workItem from="1517071415627" duration="11000" />
+      <workItem from="1519070756626" duration="17000" />
+      <workItem from="1519223769008" duration="191000" />
+      <workItem from="1519223964355" duration="13000" />
+      <workItem from="1519224083735" duration="793000" />
+      <workItem from="1519585882603" duration="184000" />
+      <workItem from="1519816117859" duration="2000" />
+      <workItem from="1519816226938" duration="330000" />
+      <workItem from="1519816768395" duration="880000" />
+      <workItem from="1519822531053" duration="2770000" />
+      <workItem from="1519894270025" duration="291000" />
+      <workItem from="1519903473601" duration="1308000" />
+      <workItem from="1519905689114" duration="675000" />
+      <workItem from="1520003534219" duration="324000" />
+      <workItem from="1520004039207" duration="4389000" />
+      <workItem from="1520246238977" duration="11654000" />
+      <workItem from="1520327499664" duration="2894000" />
+      <workItem from="1520330419729" duration="10258000" />
+      <workItem from="1520353576800" duration="3557000" />
+      <workItem from="1520414120672" duration="5001000" />
+      <workItem from="1520421200029" duration="968000" />
+      <workItem from="1520428899325" duration="6217000" />
+      <workItem from="1520455139572" duration="1087000" />
+      <workItem from="1520456536004" duration="214000" />
+      <workItem from="1520459423405" duration="2193000" />
+      <workItem from="1520500111179" duration="10322000" />
+      <workItem from="1520516195998" duration="4782000" />
+      <workItem from="1520521675719" duration="6138000" />
+      <workItem from="1520528048504" duration="1852000" />
+      <workItem from="1520545437250" duration="1442000" />
+      <workItem from="1520546948334" duration="2744000" />
+      <workItem from="1520549720575" duration="199000" />
+      <workItem from="1520550000554" duration="485000" />
+      <workItem from="1520583068186" duration="4850000" />
+      <workItem from="1520599021779" duration="601000" />
+      <workItem from="1520603862907" duration="3449000" />
+      <workItem from="1520607781640" duration="34000" />
+      <workItem from="1520608114832" duration="17000" />
+      <workItem from="1520608133574" duration="3449000" />
+      <workItem from="1520713079293" duration="25000" />
+      <workItem from="1520845128301" duration="6008000" />
+      <workItem from="1520852556867" duration="11000" />
+      <workItem from="1520852604240" duration="3169000" />
+      <workItem from="1520859129009" duration="4000" />
+      <workItem from="1520932011141" duration="495000" />
+      <workItem from="1520933181146" duration="10883000" />
+      <workItem from="1520954001927" duration="166000" />
+      <workItem from="1520954212983" duration="2400000" />
+      <workItem from="1520956622625" duration="2577000" />
+      <workItem from="1520962461328" duration="100000" />
+      <workItem from="1521018105378" duration="1488000" />
+      <workItem from="1521019597681" duration="9000" />
+      <workItem from="1521019650039" duration="806000" />
+      <workItem from="1521020521178" duration="34000" />
+      <workItem from="1521021058003" duration="770000" />
+      <workItem from="1521021834680" duration="6000" />
+      <workItem from="1521022058423" duration="1381000" />
+      <workItem from="1521023444697" duration="368000" />
+      <workItem from="1521023961897" duration="106000" />
+      <workItem from="1521024259530" duration="686000" />
+      <workItem from="1521026381534" duration="3000" />
+      <workItem from="1521026475491" duration="284000" />
+      <workItem from="1521026763338" duration="460000" />
+    </task>
+    <task id="LOCAL-00001" summary="H2InMemoryDbDemoApplication : second commit after reopening IntelliJ">
+      <created>1516564442988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516564442988</updated>
+    </task>
+    <task id="LOCAL-00002" summary="H2InMemoryDbDemoApplication : second commit after reopening IntelliJ">
+      <created>1516564466540</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516564466540</updated>
+    </task>
+    <task id="LOCAL-00003" summary="H2InMemoryDbDemoApplication : second commit after reopening IntelliJ">
+      <created>1516564479112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1516564479112</updated>
+    </task>
+    <task id="LOCAL-00004" summary="H2InMemoryDbDemoApplication : second commit after reopening IntelliJ">
+      <created>1521026528190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521026528190</updated>
+    </task>
+    <task id="LOCAL-00005" summary="001 et 003 : passage sur IntelliJ Community &gt; je me base sur mon JDK local et non sur le embedded JDK de la précédente version d'IntelliJ Ultimate.">
+      <created>1521106546311</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521106546311</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Passage sur IntelliJ Community &gt; je me base sur mon JDK local et non sur le embedded JDK de la précédente version d'IntelliJ Ultimate.">
+      <created>1521106691912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1521106691912</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Passage sur IntelliJ Community &gt; je me base sur mon JDK local et non sur le embedded JDK de la précédente version d'IntelliJ Ultimate.">
+      <created>1521106707553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1521106707553</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TDD : EventProcessorTest.given_a_domain_event_to_process_triggers_the_event_processing_and_log_the_processed_event préparé.">
+      <created>1521106787183</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1521106787183</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TDD : Implementation liée au EventProcessorTest.given_a_domain_event_to_process_triggers_the_event_processing_and_log_the_processed_event précédemment préparé.">
+      <created>1521110816293</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1521110816293</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented TU on LandOn* events + their respective implementation.">
+      <created>1521126017003</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521126017003</updated>
+    </task>
+    <task id="LOCAL-00011" summary="IntelliJ configuration files.">
+      <created>1521126074539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1521126074539</updated>
+    </task>
+    <task id="LOCAL-00012" summary="IntelliJ configuration files.">
+      <created>1521126098612</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1521126098612</updated>
+    </task>
+    <task id="LOCAL-00013" summary="011 : save of the work in progress.">
+      <created>1521126144365</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1521126144365</updated>
+    </task>
+    <task id="LOCAL-00014" summary="008_monopoly_event_sourcing : implemented the player.moveTo behavior.">
+      <created>1521127145783</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1521127145783</updated>
+    </task>
+    <task id="LOCAL-00015" summary="008_monopoly_event_sourcing : implemented the RunOutOfMoneyEvent.">
+      <created>1521191358463</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1521191358463</updated>
+    </task>
+    <task id="LOCAL-00016" summary="008_monopoly_event_sourcing : implemented the removal of a player when he runs out of money and the dice roll.">
+      <created>1521208805400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1521208805400</updated>
+    </task>
+    <task id="LOCAL-00017" summary="008_monopoly_event_sourcing : refactoring the events to make them returning the message to log directly.">
+      <created>1521209579705</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1521209579705</updated>
+    </task>
+    <task id="LOCAL-00018" summary="008_monopoly_event_sourcing : implemented the MoveToLocationEvent and all required checks when starting a new game.">
+      <created>1521213328736</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1521213328736</updated>
+    </task>
+    <task id="LOCAL-00019" summary="000_treasures_hunt : modification de la description du projet dans le pom.">
+      <created>1535280418951</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535280418951</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Mise à jour des pom.">
+      <created>1535280968184</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535280968184</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Corrections mineures.">
+      <created>1535281425954</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535281425954</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Corrections mineures.">
+      <created>1564839251073</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564839251073</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Corrections mineures.">
+      <created>1564839282766</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564839282766</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Corrections mineures.">
+      <created>1564842424165</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564842424165</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="GameTest - 2018.03.16 at 16h 09m 01s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2018.03.16 at 16h 10m 58s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2018.03.16 at 16h 13m 53s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoveToLocationEventTest - 2018.03.16 at 15h 36m 33s.xml">
+      <configuration name="MoveToLocationEventTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 08m 37s.xml">
+      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 11m 50s.xml">
+      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 13m 11s.xml">
+      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JBehaveMain - 2018.08.26 at 13h 03m 10s.xml">
+      <configuration name="JBehaveMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest - 2018.08.26 at 13h 07m 40s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2018.08.26 at 13h 07m 55s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="140711000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.story" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/trip-service-kata" />
+    </ignored-roots>
+    <MESSAGE value="H2InMemoryDbDemoApplication : second commit after reopening IntelliJ" />
+    <MESSAGE value="001 et 003 : passage sur IntelliJ Community &gt; je me base sur mon JDK local et non sur le embedded JDK de la précédente version d'IntelliJ Ultimate." />
+    <MESSAGE value="Passage sur IntelliJ Community &gt; je me base sur mon JDK local et non sur le embedded JDK de la précédente version d'IntelliJ Ultimate." />
+    <MESSAGE value="TDD : EventProcessorTest.given_a_domain_event_to_process_triggers_the_event_processing_and_log_the_processed_event préparé." />
+    <MESSAGE value="TDD : Implementation liée au EventProcessorTest.given_a_domain_event_to_process_triggers_the_event_processing_and_log_the_processed_event précédemment préparé." />
+    <MESSAGE value="Implemented TU on LandOn* events + their respective implementation." />
+    <MESSAGE value="IntelliJ configuration files." />
+    <MESSAGE value="011 : save of the work in progress." />
+    <MESSAGE value="008_monopoly_event_sourcing : implemented the player.moveTo behavior." />
+    <MESSAGE value="008_monopoly_event_sourcing : implemented the RunOutOfMoneyEvent." />
+    <MESSAGE value="008_monopoly_event_sourcing : implemented the removal of a player when he runs out of money and the dice roll." />
+    <MESSAGE value="008_monopoly_event_sourcing : refactoring the events to make them returning the message to log directly." />
+    <MESSAGE value="008_monopoly_event_sourcing : implemented the MoveToLocationEvent and all required checks when starting a new game." />
+    <MESSAGE value="000_treasures_hunt : modification de la description du projet dans le pom." />
+    <MESSAGE value="Mise à jour des pom." />
+    <MESSAGE value="Corrections mineures." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections mineures." />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Invalid</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>008_monopoly</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

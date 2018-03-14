@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/003_thejavageek-jpa-entities/pom.xml" />
+        <option value="$PROJECT_DIR$/002_gs-accessing-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/001_H2InMemoryDbDemoApplication/pom.xml" />
+        <option value="$PROJECT_DIR$/004_maxime-mader-string-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/005_Streams/pom.xml" />
+        <option value="$PROJECT_DIR$/DesignPatterns/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/005_maxime-mader-panda/pom.xml" />
+        <option value="$PROJECT_DIR$/006_maxime-mader-monopoly/pom.xml" />
+        <option value="$PROJECT_DIR$/Dropwizard/pom.xml" />
+        <option value="$PROJECT_DIR$/001_in-memory-db-demo-application/pom.xml" />
+        <option value="$PROJECT_DIR$/004_string-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/005_projet-panda/pom.xml" />
+        <option value="$PROJECT_DIR$/006_design-patterns/pom.xml" />
+        <option value="$PROJECT_DIR$/007_hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/008_monopoly/pom.xml" />
+        <option value="$PROJECT_DIR$/009_dropwizard/pom.xml" />
+        <option value="$PROJECT_DIR$/010_dropwizard_parts/pom.xml" />
+        <option value="$PROJECT_DIR$/009_dropwizard_hello_world/pom.xml" />
+        <option value="$PROJECT_DIR$/011_dropwizard_blog_mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/000_treasures_hunt/pom.xml" />
+        <option value="$PROJECT_DIR$/008_monopoly_event_sourcing/pom.xml" />
+        <option value="$PROJECT_DIR$/012_prime_numbers_old/pom.xml" />
+        <option value="$PROJECT_DIR$/012_generics/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/1_introduction_jpa/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>
