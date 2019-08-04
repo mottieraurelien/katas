@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/data/FilesRefStaticMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/Od.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/OdFullTrain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/OdNoHst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" afterDir="false" />
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Dto and loader before migrating to generics.">
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/CsvApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/CsvLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/012_generics/012_generics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/012_generics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/012_generics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/012_generics/src/main/java/csv/data/FilesRefStaticMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/data/FilesRefStaticMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +60,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -176,11 +172,11 @@
       <recent name="com.example.h2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="csv.loader" />
       <recent name="csv.domain" />
       <recent name="" />
       <recent name="domain" />
       <recent name="exception" />
-      <recent name="event" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aurel\GitProjects\katas\" />
@@ -202,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JacksonCsvLoader">
+  <component name="RunManager" selected="Application.CsvApp">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -232,6 +228,20 @@
     </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CsvApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="csv.CsvApp" />
+      <module name="012_generics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="csv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -304,16 +314,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="008_monopoly" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -353,19 +353,19 @@
       <envs />
     </configuration>
     <list>
+      <item itemvalue="Application.JacksonCsvLoader" />
+      <item itemvalue="Application.CsvApp" />
       <item itemvalue="JUnit.DoubleDiceTest" />
       <item itemvalue="JUnit.EventProcessorTest" />
-      <item itemvalue="JUnit.GameTest" />
       <item itemvalue="JUnit.GameMasterTest" />
-      <item itemvalue="Application.JacksonCsvLoader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CsvApp" />
         <item itemvalue="Application.JacksonCsvLoader" />
         <item itemvalue="JUnit.GameMasterTest" />
         <item itemvalue="JUnit.DoubleDiceTest" />
         <item itemvalue="JUnit.EventProcessorTest" />
-        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -635,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564842692347</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Dto and loader before migrating to generics.">
+      <created>1564930680470</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1564930680470</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -680,6 +687,17 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.story" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/trip-service-kata" />
@@ -700,17 +718,7 @@
     <MESSAGE value="000_treasures_hunt : modification de la description du projet dans le pom." />
     <MESSAGE value="Mise à jour des pom." />
     <MESSAGE value="Corrections mineures." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections mineures." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Dto and loader before migrating to generics." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dto and loader before migrating to generics." />
   </component>
 </project>
