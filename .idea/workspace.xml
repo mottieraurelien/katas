@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Corrections mineures.">
-      <change afterPath="$PROJECT_DIR$/012_generics/012_generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/012_generics/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/data/FilesRefStaticMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/Od.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/OdFullTrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/domain/OdNoHst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/012_generics/012_generics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/012_generics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/012_generics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +138,7 @@
     <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -149,7 +153,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/012_generics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -172,17 +176,18 @@
       <recent name="com.example.h2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="csv.domain" />
       <recent name="" />
       <recent name="domain" />
       <recent name="exception" />
       <recent name="event" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aurel\GitProjects\katas\" />
+      <recent name="C:\Users\aurel\GitProjects\katas\012_generics" />
       <recent name="C:\Users\aurel\GitProjects\katas\005_projet-panda" />
       <recent name="C:\Users\aurel\GitProjects\katas\011_dropwizard_blog_mongo" />
       <recent name="C:\Users\aurel\GitProjects\katas\010_dropwizard_parts" />
-      <recent name="C:\Users\aurel\GitProjects\katas\009_dropwizard_hello_world" />
-      <recent name="C:\Users\aurel\GitProjects\katas\008_monopoly_event_sourcing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameMasterTest">
+  <component name="RunManager" selected="Application.JacksonCsvLoader">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -227,6 +232,20 @@
     </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JacksonCsvLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="csv.loader.JacksonCsvLoader" />
+      <module name="012_generics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="csv.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,16 +314,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="008_monopoly" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -347,16 +356,16 @@
       <item itemvalue="JUnit.DoubleDiceTest" />
       <item itemvalue="JUnit.EventProcessorTest" />
       <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.GameMasterTest" />
+      <item itemvalue="Application.JacksonCsvLoader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JacksonCsvLoader" />
         <item itemvalue="JUnit.GameMasterTest" />
         <item itemvalue="JUnit.DoubleDiceTest" />
         <item itemvalue="JUnit.EventProcessorTest" />
         <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -619,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564842424165</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Corrections mineures.">
+      <created>1564842692347</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1564842692347</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -662,6 +678,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.story" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -685,92 +702,15 @@
     <MESSAGE value="Corrections mineures." />
     <option name="LAST_COMMIT_MESSAGE" value="Corrections mineures." />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Invalid</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>008_monopoly</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
