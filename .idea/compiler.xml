@@ -55,7 +55,7 @@
       <module name="006_maxime-mader-monopoly" target="1.8" />
       <module name="007_DesignPatterns" target="1.8" />
       <module name="007_hibernate" target="12" />
-      <module name="008_monopoly" target="1.8" />
+      <module name="008_monopoly" target="12" />
       <module name="008_monopoly_event_sourcing" target="1.8" />
       <module name="009_dropwizard" target="1.8" />
       <module name="009_dropwizard_hello_world" target="1.8" />
