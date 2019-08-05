@@ -8,20 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="005_projet-panda" />
         <module name="006_design-patterns" />
+        <module name="012_generics" />
         <module name="003_thejavageek-jpa-entities" />
         <module name="005_maxime-mader-panda" />
         <module name="002_gs-accessing-data-jpa" />
         <module name="005_Java8" />
+        <module name="005_Streams" />
         <module name="thejavageek-jpa-entities" />
         <module name="Dropwizard" />
         <module name="Introduction_Jpa_Hibernate" />
         <module name="009_dropwizard_hello_world" />
         <module name="010_dropwizard_parts" />
-        <module name="007_hibernate" />
         <module name="gs-accessing-data-jpa" />
         <module name="006_maxime-mader-monopoly" />
         <module name="004_string-calculator" />
-        <module name="012_generics" />
+        <module name="DesignPatterns" />
         <module name="001_in-memory-db-demo-application" />
         <module name="005_maxime-mader-projet-panda" />
         <module name="008_monopoly_event_sourcing" />
@@ -29,18 +30,17 @@
         <module name="008_monopoly" />
         <module name="Hibernate" />
         <module name="H2InMemoryDbDemoApplication" />
-        <module name="DesignPatterns" />
         <module name="007_DesignPatterns" />
         <module name="000_treasures_hunt" />
         <module name="011_dropwizard_blog_mongo" />
         <module name="004_maxime-mader-string-calculator" />
         <module name="string-calculator" />
         <module name="009_dropwizard" />
-        <module name="005_Streams" />
+        <module name="007_hibernate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="000_treasures_hunt" target="1.8" />
+      <module name="000_treasures_hunt" target="12" />
       <module name="001_in-memory-db-demo-application" target="1.8" />
       <module name="002_gs-accessing-data-jpa" target="1.8" />
       <module name="003_thejavageek-jpa-entities" target="1.8" />

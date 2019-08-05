@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to generics.">
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to generics : fix.">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/012_generics/src/main/java/csv/CsvApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/CsvApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/012_generics/src/main/java/csv/loader/JacksonCsvLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/000_treasures_hunt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/000_treasures_hunt/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +151,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -647,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564950370898</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Migration to generics : fix.">
+      <created>1565026706475</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565026706475</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -727,6 +736,7 @@
     <MESSAGE value="Corrections mineures." />
     <MESSAGE value="Dto and loader before migrating to generics." />
     <MESSAGE value="Migration to generics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration to generics." />
+    <MESSAGE value="Migration to generics : fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migration to generics : fix." />
   </component>
 </project>
