@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to OpenJDK 12.0.2 : module 008.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_16_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/009_dropwizard_hello_world/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/009_dropwizard_hello_world/pom.xml" afterDir="false" />
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to OpenJDK 12.0.2 : module 009.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/011_dropwizard_blog_mongo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/011_dropwizard_blog_mongo/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -730,7 +732,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565029219570</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Migration to OpenJDK 12.0.2 : module 009.">
+      <created>1565029304584</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1565029304584</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Migration to OpenJDK 12.0.2 : module 010.">
+      <created>1565029438360</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1565029438360</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -760,8 +776,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/trip-service-kata" />
     </ignored-roots>
-    <MESSAGE value="TDD : Implementation liée au EventProcessorTest.given_a_domain_event_to_process_triggers_the_event_processing_and_log_the_processed_event précédemment préparé." />
-    <MESSAGE value="Implemented TU on LandOn* events + their respective implementation." />
     <MESSAGE value="IntelliJ configuration files." />
     <MESSAGE value="011 : save of the work in progress." />
     <MESSAGE value="008_monopoly_event_sourcing : implemented the player.moveTo behavior." />
@@ -785,6 +799,8 @@
     <MESSAGE value="Migration to OpenJDK 12.0.2 : module 007." />
     <MESSAGE value="Migration to OpenJDK 12.0.2 : module 008." />
     <MESSAGE value="Migration to OpenJDK 12.0.2 : module 008+." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration to OpenJDK 12.0.2 : module 008+." />
+    <MESSAGE value="Migration to OpenJDK 12.0.2 : module 009." />
+    <MESSAGE value="Migration to OpenJDK 12.0.2 : module 010." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migration to OpenJDK 12.0.2 : module 010." />
   </component>
 </project>
