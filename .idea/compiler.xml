@@ -61,7 +61,7 @@
       <module name="009_dropwizard_hello_world" target="12" />
       <module name="010_dropwizard_parts" target="12" />
       <module name="011_dropwizard_blog_mongo" target="12" />
-      <module name="012_generics" target="1.8" />
+      <module name="012_generics" target="12" />
       <module name="012_prime_numbers_ludovic" target="1.8" />
       <module name="DesignPatterns" target="1.8" />
       <module name="Dropwizard" target="1.8" />
