@@ -19,8 +19,7 @@ public class JacksonCsvLoader<D> implements CsvLoader {
     private final File file;
     private final Class beanClass;
 
-    public JacksonCsvLoader(final Class genericClass) {
-        FilesRefStaticMapping data = FilesRefStaticMapping.from(genericClass);
+    public JacksonCsvLoader(final FilesRefStaticMapping data) {
         this.mapper = new CsvMapper();
         this.mapper.registerModule(new JavaTimeModule());
         this.schema = this.mapper.schemaFor(data.getBeanClass()).withHeader().withColumnSeparator(CSV_SEPARATOR);
