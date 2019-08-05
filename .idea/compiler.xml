@@ -45,7 +45,7 @@
       <module name="002_gs-accessing-data-jpa" target="1.8" />
       <module name="003_thejavageek-jpa-entities" target="1.8" />
       <module name="004_maxime-mader-string-calculator" target="1.8" />
-      <module name="004_string-calculator" target="1.8" />
+      <module name="004_string-calculator" target="12" />
       <module name="005_Java8" target="1.8" />
       <module name="005_maxime-mader-panda" target="1.8" />
       <module name="005_maxime-mader-projet-panda" target="1.8" />
@@ -78,6 +78,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="001_in-memory-db-demo-application" options="-parameters" />
       <module name="002_gs-accessing-data-jpa" options="-parameters" />
+      <module name="003_thejavageek-jpa-entities" options="-parameters" />
     </option>
   </component>
 </project>
