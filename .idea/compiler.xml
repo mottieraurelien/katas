@@ -49,7 +49,7 @@
       <module name="005_Java8" target="1.8" />
       <module name="005_maxime-mader-panda" target="1.8" />
       <module name="005_maxime-mader-projet-panda" target="1.8" />
-      <module name="005_projet-panda" target="1.8" />
+      <module name="005_projet-panda" target="12" />
       <module name="005_Streams" target="1.8" />
       <module name="006_design-patterns" target="1.8" />
       <module name="006_maxime-mader-monopoly" target="1.8" />
