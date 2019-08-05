@@ -13,8 +13,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <release>12</release>
         </configuration>
       </plugin>
       <plugin>
@@ -56,7 +55,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>2.15.0</version>
+      <version>2.28.2</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -71,12 +70,11 @@
     </dependency>
   </dependencies>
   <properties>
-    <h2.version>1.4.196</h2.version>
     <dropwizard.version>1.2.4</dropwizard.version>
-    <mockito.core.version>2.15.0</mockito.core.version>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mockito.core.version>2.28.2</mockito.core.version>
+    <h2.version>1.4.199</h2.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 </project>
 
