@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to generics : fix.">
+    <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to OpenJDK 12.0.2 : module 000.">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/000_treasures_hunt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/000_treasures_hunt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/002_gs-accessing-data-jpa/002_gs-accessing-data-jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/002_gs-accessing-data-jpa/002_gs-accessing-data-jpa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/002_gs-accessing-data-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/002_gs-accessing-data-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/002_gs-accessing-data-jpa/src/main/java/hello/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/002_gs-accessing-data-jpa/src/main/java/hello/Application.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CsvApp">
+  <component name="RunManager" selected="JUnit.H2InMemoryDbDemoApplicationTests">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -282,22 +282,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="008_monopoly_event_sourcing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="processor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="processor" />
-      <option name="MAIN_CLASS_NAME" value="processor.EventProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GameMasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="008_monopoly_event_sourcing" />
       <extension name="coverage">
@@ -308,6 +292,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="domain" />
       <option name="MAIN_CLASS_NAME" value="domain.GameMasterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="H2InMemoryDbDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="001_in-memory-db-demo-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.h2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.h2" />
+      <option name="MAIN_CLASS_NAME" value="com.example.h2.H2InMemoryDbDemoApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -356,16 +356,16 @@
       <item itemvalue="Application.JacksonCsvLoader" />
       <item itemvalue="Application.CsvApp" />
       <item itemvalue="JUnit.DoubleDiceTest" />
-      <item itemvalue="JUnit.EventProcessorTest" />
       <item itemvalue="JUnit.GameMasterTest" />
+      <item itemvalue="JUnit.H2InMemoryDbDemoApplicationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.H2InMemoryDbDemoApplicationTests" />
         <item itemvalue="Application.CsvApp" />
         <item itemvalue="Application.JacksonCsvLoader" />
         <item itemvalue="JUnit.GameMasterTest" />
         <item itemvalue="JUnit.DoubleDiceTest" />
-        <item itemvalue="JUnit.EventProcessorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -656,40 +656,22 @@
       <option name="project" value="LOCAL" />
       <updated>1565026706475</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Migration to OpenJDK 12.0.2 : module 000.">
+      <created>1565027606154</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565027606154</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Migration to OpenJDK 12.0.2 : module 001.">
+      <created>1565028076784</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1565028076784</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="GameTest - 2018.03.16 at 16h 09m 01s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.03.16 at 16h 10m 58s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.03.16 at 16h 13m 53s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MoveToLocationEventTest - 2018.03.16 at 15h 36m 33s.xml">
-      <configuration name="MoveToLocationEventTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 08m 37s.xml">
-      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 11m 50s.xml">
-      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PrimeNumbersTest - 2018.07.31 at 21h 13m 11s.xml">
-      <configuration name="PrimeNumbersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JBehaveMain - 2018.08.26 at 13h 03m 10s.xml">
-      <configuration name="JBehaveMain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest - 2018.08.26 at 13h 07m 40s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.08.26 at 13h 07m 55s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="140711000" />
@@ -737,6 +719,8 @@
     <MESSAGE value="Dto and loader before migrating to generics." />
     <MESSAGE value="Migration to generics." />
     <MESSAGE value="Migration to generics : fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration to generics : fix." />
+    <MESSAGE value="Migration to OpenJDK 12.0.2 : module 000." />
+    <MESSAGE value="Migration to OpenJDK 12.0.2 : module 001." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migration to OpenJDK 12.0.2 : module 001." />
   </component>
 </project>
