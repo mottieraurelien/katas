@@ -11,8 +11,8 @@ import java.util.stream.Stream;
 @AllArgsConstructor
 public enum FilesRefStaticMapping {
 
-    OD_NO_HST(OdNoHst.class, "/Users/aurel/GitProjects/katas/012_generics/src/main/resources/no_hst.csv"),
-    OD_FULL_TRAIN(OdFullTrain.class, "/Users/aurel/GitProjects/katas/012_generics/src/main/resources/full_train.csv");
+    OD_NO_HST(OdNoHst.class, "/Workspace/katas/012_generics/src/main/resources/no_hst.csv"),
+    OD_FULL_TRAIN(OdFullTrain.class, "/Workspace/katas/012_generics/src/main/resources/full_train.csv");
 
     private final Class beanClass;
     private final String filename;

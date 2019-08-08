@@ -5,7 +5,6 @@ import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import csv.data.FilesRefStaticMapping;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -30,9 +29,9 @@ public class JacksonCsvLoader<D> implements CsvLoader {
     @Override
     public List<D> load() throws IOException {
         MappingIterator<D> it = mapper
-                .readerFor(beanClass)
-                .with(schema)
-                .readValues(file);
+            .readerFor(beanClass)
+            .with(schema)
+            .readValues(file);
         return it.readAll();
     }
 

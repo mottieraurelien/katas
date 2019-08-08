@@ -1,20 +1,19 @@
 package csv.domain;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import csv.deserializer.OdPeriodDeserializer;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.time.LocalDate;
-
 @Getter
-@ToString
+@ToString(callSuper = true)
 @NoArgsConstructor
-@JsonPropertyOrder(value = {"jackson", "date"})
+@JsonPropertyOrder(value = {"jackson", "odPeriod"})
 public class OdNoHst extends Od {
 
-    @JsonFormat(pattern = "dd/MM/yyyy", shape = JsonFormat.Shape.STRING)
-    private LocalDate date;
+    @JsonDeserialize(using = OdPeriodDeserializer.class)
+    private OdPeriod odPeriod;
 
 }
