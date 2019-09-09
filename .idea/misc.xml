@@ -27,6 +27,9 @@
         <option value="$PROJECT_DIR$/008_monopoly_event_sourcing/pom.xml" />
         <option value="$PROJECT_DIR$/012_prime_numbers_old/pom.xml" />
         <option value="$PROJECT_DIR$/012_generics/pom.xml" />
+        <option value="$PROJECT_DIR$/013_bataille_jeu_de_carte/pom.xml" />
+        <option value="$PROJECT_DIR$/014_redis_twitter/pom.xml" />
+        <option value="$PROJECT_DIR$/015_REST/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -16,6 +16,9 @@
       <module fileurl="file://$PROJECT_DIR$/010_dropwizard_parts/010_dropwizard_parts.iml" filepath="$PROJECT_DIR$/010_dropwizard_parts/010_dropwizard_parts.iml" />
       <module fileurl="file://$PROJECT_DIR$/011_dropwizard_blog_mongo/011_dropwizard_blog_mongo.iml" filepath="$PROJECT_DIR$/011_dropwizard_blog_mongo/011_dropwizard_blog_mongo.iml" />
       <module fileurl="file://$PROJECT_DIR$/012_generics/012_generics.iml" filepath="$PROJECT_DIR$/012_generics/012_generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" filepath="$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" filepath="$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" filepath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" />
     </modules>
   </component>
 </project>
