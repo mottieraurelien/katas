@@ -12,9 +12,18 @@
     <description>Mise en pratique de la généricité</description>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        
+		<!-- Project settings -->
+		<java.version>12</java.version>
+		<source.encoding>UTF-8</source.encoding>
+		
+		<!-- Project dependencies -->
+		<lombok.version>1.18.8</lombok.version>
         <jackson.version>2.9.9</jackson.version>
+
+        <!-- Projet plugins -->
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+		
     </properties>
 
     <dependencies>
@@ -23,7 +32,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>${lombok.version}</version>
         </dependency>
 
         <!-- Mapping -->
@@ -60,9 +69,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <release>12</release>
+                    <release>${java.version}</release>
+					<encoding>${source.encoding}</encoding>
                 </configuration>
             </plugin>
         </plugins>
