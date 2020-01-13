@@ -2,93 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Dto and loader before migrating to generics.">
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/Figure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/013_bataille_jeu_de_carte/src/main/java/kata/domain/WarCardGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/Twitter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/command/TwitterCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/command/TwitterSyncCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/connection/TwitterRedisConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/data/TwitterTweetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/data/TwitterUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/domain/TwitterTweet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/java/domain/TwitterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/014_redis_twitter/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/015_REST.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/FeaturesConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/controller/ApiHomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/controller/Converters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/controller/ReferencesApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/controller/UsersApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/model/IReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/model/IUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/model/Validators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/FakeReferenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/FakeUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/IReferenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/AuthenticationHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/BasicJwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/FakeAuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/FullJwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/IAuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authentication/IJwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authorization/AuthorizationLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authorization/IAuthorizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/authorization/SimpleAuthorizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/exceptions/AuthenticationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/exceptions/AuthorizationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/exceptions/DataValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/exceptions/MissingRessourceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/exceptions/NotModifiedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/IHateoasReferenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/IHateoasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/IHateoasUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/impl/EmbeddedReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/impl/HateoasFacadeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/impl/HateoasReferenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/hateoas/impl/HateoasUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/model/ReferenceEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/com/carbonit/gpe/workshops/library_api/service/model/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/RFC3339DateFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/Swagger2SpringBoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/ApiOriginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/ApiResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/ReferencesApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/ReferencesApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/UsersApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/api/UsersApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/configuration/CustomInstantDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/configuration/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/configuration/JacksonConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/JWT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/Reference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/ReferencePartial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/java/io/swagger/model/UserPartial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/test/java/io/swagger/api/ReferencesApiControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015_REST/src/test/java/io/swagger/api/UsersApiControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_first_bbl_palo/016_first_bbl_palo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_first_bbl_palo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_first_bbl_palo/src/test/java/SampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/017_tdd_string_calculator/017_tdd_string_calculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/017_tdd_string_calculator/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,11 +110,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/mottieraurelien/katas.git" />
+      </set>
+    </option>
+  </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
       <facet id="001_in-memory-db-demo-application/invalid/Spring" />
       <facet id="002_gs-accessing-data-jpa/invalid/Spring" />
       <facet id="003_thejavageek-jpa-entities/invalid/Spring" />
+      <facet id="015_atelier_rest_richardson/invalid/Spring" />
+      <facet id="015_atelier_rest_richardson/invalid/Web" />
     </ignored-facets>
   </component>
   <component name="MavenImportPreferences">
@@ -209,6 +142,11 @@
     <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="Remove" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -217,6 +155,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="ToolWindowStructure.ShowToolbar" value="false" />
@@ -225,9 +164,9 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/015_REST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/013_bataille_jeu_de_carte" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -262,19 +201,7 @@
       <recent name="C:\Users\aurel\GitProjects\katas\010_dropwizard_parts" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.H2InMemoryDbDemoApplicationTests">
+  <component name="RunManager" selected="JUnit.SampleTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -315,22 +242,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubleDiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="008_monopoly_event_sourcing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="domain" />
-      <option name="MAIN_CLASS_NAME" value="domain.DoubleDiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GameMasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="008_monopoly_event_sourcing" />
       <extension name="coverage">
@@ -357,6 +268,16 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.h2" />
       <option name="MAIN_CLASS_NAME" value="com.example.h2.H2InMemoryDbDemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="016_first_bbl_palo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -423,23 +344,31 @@
     <list>
       <item itemvalue="Application.JacksonCsvLoader" />
       <item itemvalue="Application.CsvApp" />
-      <item itemvalue="JUnit.DoubleDiceTest" />
       <item itemvalue="JUnit.GameMasterTest" />
       <item itemvalue="JUnit.H2InMemoryDbDemoApplicationTests" />
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Spring Boot.H2InMemoryDbDemoApplication" />
-      <item itemvalue="Spring Boot.ThejavageekJpaEntitiesApplication" />
-      <item itemvalue="Spring Boot.Swagger2SpringBoot" />
+      <item itemvalue="JUnit.SampleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SampleTest" />
         <item itemvalue="JUnit.H2InMemoryDbDemoApplicationTests" />
         <item itemvalue="Application.CsvApp" />
         <item itemvalue="Application.JacksonCsvLoader" />
         <item itemvalue="JUnit.GameMasterTest" />
-        <item itemvalue="JUnit.DoubleDiceTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\aurel\AppData\Roaming\Subversion</configuration>
@@ -896,5 +825,43 @@
     <MESSAGE value="Migration to OpenJDK 12.0.2 : module 011." />
     <MESSAGE value="Local changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Local changes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="319" y="88" key="#Project_Structure" timestamp="1578649075096">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="319" y="88" key="#Project_Structure/0.23.1440.797@0.23.1440.797" timestamp="1578649075096" />
+    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578663239785">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.797@0.23.1440.797" timestamp="1578663239785" />
+    <state width="1358" height="84" key="GridCell.Tab.0.bottom" timestamp="1578674541662">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1358" height="84" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1578674541662" />
+    <state width="1358" height="84" key="GridCell.Tab.0.center" timestamp="1578674541661">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1358" height="84" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1578674541661" />
+    <state width="1358" height="84" key="GridCell.Tab.0.left" timestamp="1578674541660">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1358" height="84" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1578674541660" />
+    <state width="1358" height="84" key="GridCell.Tab.0.right" timestamp="1578674541662">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1358" height="84" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1578674541662" />
+    <state x="363" y="139" key="RollbackChangesDialog" timestamp="1578651702583">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="363" y="139" key="RollbackChangesDialog/0.23.1440.797@0.23.1440.797" timestamp="1578651702583" />
+    <state x="207" y="23" key="SettingsEditor" timestamp="1578650569951">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="207" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1578650569951" />
+    <state x="118" y="23" key="new project wizard" timestamp="1578663123776">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="118" y="23" key="new project wizard/0.23.1440.797@0.23.1440.797" timestamp="1578663123776" />
   </component>
 </project>

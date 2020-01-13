@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/013_bataille_jeu_de_carte/pom.xml" />
         <option value="$PROJECT_DIR$/014_redis_twitter/pom.xml" />
         <option value="$PROJECT_DIR$/015_REST/pom.xml" />
+        <option value="$PROJECT_DIR$/015_atelier_rest_richardson/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -38,7 +39,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="12.0.2" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="13" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
