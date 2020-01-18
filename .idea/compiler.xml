@@ -8,38 +8,39 @@
         <outputRelativeToContentRoot value="true" />
         <module name="014_redis_twitter" />
         <module name="005_projet-panda" />
-        <module name="000_treasures_hunt" />
+        <module name="009_dropwizard" />
         <module name="006_design-patterns" />
         <module name="012_generics" />
         <module name="003_thejavageek-jpa-entities" />
         <module name="005_maxime-mader-panda" />
         <module name="002_gs-accessing-data-jpa" />
         <module name="005_Java8" />
-        <module name="Dropwizard" />
+        <module name="005_Streams" />
         <module name="thejavageek-jpa-entities" />
-        <module name="001_in-memory-db-demo-application" />
+        <module name="Dropwizard" />
         <module name="Introduction_Jpa_Hibernate" />
+        <module name="009_dropwizard_hello_world" />
+        <module name="016_bank_account" />
         <module name="010_dropwizard_parts" />
-        <module name="007_hibernate" />
         <module name="gs-accessing-data-jpa" />
         <module name="006_maxime-mader-monopoly" />
+        <module name="004_string-calculator" />
         <module name="DesignPatterns" />
         <module name="015_atelier_rest_richardson" />
-        <module name="Hibernate" />
-        <module name="005_maxime-mader-projet-panda" />
+        <module name="001_in-memory-db-demo-application" />
         <module name="008_monopoly_event_sourcing" />
         <module name="013_bataille_jeu_de_carte" />
-        <module name="004_string-calculator" />
         <module name="012_prime_numbers_ludovic" />
         <module name="008_monopoly" />
+        <module name="Hibernate" />
         <module name="H2InMemoryDbDemoApplication" />
         <module name="007_DesignPatterns" />
-        <module name="009_dropwizard_hello_world" />
+        <module name="000_treasures_hunt" />
         <module name="011_dropwizard_blog_mongo" />
         <module name="004_maxime-mader-string-calculator" />
         <module name="string-calculator" />
-        <module name="009_dropwizard" />
-        <module name="005_Streams" />
+        <module name="005_maxime-mader-projet-panda" />
+        <module name="007_hibernate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -69,6 +70,7 @@
       <module name="013_bataille_jeu_de_carte" target="12" />
       <module name="014_redis_twitter" target="12" />
       <module name="015_atelier_rest_richardson" target="12" />
+      <module name="016_bank_account" target="13" />
       <module name="016_first_bbl_palo" target="13" />
       <module name="017_tdd_string_calculator" target="1.5" />
       <module name="DesignPatterns" target="1.8" />

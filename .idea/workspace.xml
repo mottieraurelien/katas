@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c783ddd1-b87b-41f0-9b7b-a16be88627d7" name="Default" comment="Migration to OpenJDK 13.">
-      <change afterPath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/announcer/NewComingAnimalOnboarding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/announcer/NewComingAnimalPublicAnnouncement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/domain/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/016_bank_account.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/domain/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/domain/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/domain/OperationHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/domain/OperationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/operation/Depositable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/operation/StatementPrintable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/operation/Withdrawable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/service/DateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/main/java/service/PrintService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/test/java/domain/BankAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/test/java/domain/OperationHistoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/test/java/domain/OperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/016_bank_account/src/test/java/service/PrintServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/domain/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/PrintNameAnimalAdded.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/Zoo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +144,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/since/jdk9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/016_bank_account" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -162,11 +174,11 @@
       <recent name="exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/016_bank_account" />
       <recent name="$PROJECT_DIR$/006_design-patterns/src/main/java/dp/structure/observer/since/jdk9" />
       <recent name="$PROJECT_DIR$/013_bataille_jeu_de_carte" />
       <recent name="C:\Users\aurel\GitProjects\katas\" />
       <recent name="C:\Users\aurel\GitProjects\katas\012_generics" />
-      <recent name="C:\Users\aurel\GitProjects\katas\005_projet-panda" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Client">
@@ -747,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578911317248</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="[Design Pattern] Migration du kata autour du DP Observer vers JDK9+ (PropertyChangeListener).">
+      <created>1579353460276</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1579353460276</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -774,7 +793,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/trip-service-kata" />
     </ignored-roots>
-    <MESSAGE value="008_monopoly_event_sourcing : implemented the RunOutOfMoneyEvent." />
     <MESSAGE value="008_monopoly_event_sourcing : implemented the removal of a player when he runs out of money and the dice roll." />
     <MESSAGE value="008_monopoly_event_sourcing : refactoring the events to make them returning the message to log directly." />
     <MESSAGE value="008_monopoly_event_sourcing : implemented the MoveToLocationEvent and all required checks when starting a new game." />
@@ -799,7 +817,8 @@
     <MESSAGE value="Migration to OpenJDK 12.0.2 : module 011." />
     <MESSAGE value="Local changes" />
     <MESSAGE value="Migration to OpenJDK 13." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration to OpenJDK 13." />
+    <MESSAGE value="[Design Pattern] Migration du kata autour du DP Observer vers JDK9+ (PropertyChangeListener)." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Design Pattern] Migration du kata autour du DP Observer vers JDK9+ (PropertyChangeListener)." />
   </component>
   <component name="WindowStateProjectService">
     <state x="319" y="88" key="#Project_Structure" timestamp="1578649075096">
@@ -810,10 +829,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="542" y="118" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1579351207204" />
-    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578911432793">
+    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1579353541204">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.797@0.23.1440.797" timestamp="1578911432793" />
+    <state x="440" y="98" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.797@0.23.1440.797" timestamp="1579353541204" />
     <state x="432" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579350020188">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -822,26 +841,26 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="467" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.797@0.23.1440.797" timestamp="1579348526479" />
-    <state x="245" y="23" key="CommitChangelistDialog2" timestamp="1578911317038">
+    <state x="245" y="23" key="CommitChangelistDialog2" timestamp="1579354950547">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="245" y="23" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1578911317038" />
-    <state width="1358" height="178" key="GridCell.Tab.0.bottom" timestamp="1579353223747">
+    <state x="245" y="23" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1579354950547" />
+    <state width="1358" height="407" key="GridCell.Tab.0.bottom" timestamp="1579355055038">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1358" height="178" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1579353223747" />
-    <state width="1358" height="178" key="GridCell.Tab.0.center" timestamp="1579353223746">
+    <state width="1358" height="407" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1579355055038" />
+    <state width="1358" height="407" key="GridCell.Tab.0.center" timestamp="1579355055037">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1358" height="178" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1579353223746" />
-    <state width="1358" height="178" key="GridCell.Tab.0.left" timestamp="1579353223746">
+    <state width="1358" height="407" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1579355055037" />
+    <state width="1358" height="407" key="GridCell.Tab.0.left" timestamp="1579355055036">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1358" height="178" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1579353223746" />
-    <state width="1358" height="178" key="GridCell.Tab.0.right" timestamp="1579353223746">
+    <state width="1358" height="407" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1579355055036" />
+    <state width="1358" height="407" key="GridCell.Tab.0.right" timestamp="1579355055038">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1358" height="178" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1579353223746" />
+    <state width="1358" height="407" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1579355055038" />
     <state x="363" y="139" key="RollbackChangesDialog" timestamp="1578651702583">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -850,21 +869,21 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="207" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1578650569951" />
-    <state x="329" y="147" key="Vcs.Push.Dialog.v2" timestamp="1578911319011">
+    <state x="329" y="147" key="Vcs.Push.Dialog.v2" timestamp="1579353461842">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="329" y="147" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1578911319011" />
+    <state x="329" y="147" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1579353461842" />
     <state x="384" y="51" width="689" height="708" key="find.popup" timestamp="1579104125409">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="384" y="51" width="689" height="708" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1579104125409" />
-    <state x="118" y="131" width="1246" height="566" key="new project wizard" timestamp="1578911426359">
+    <state x="118" y="131" width="1246" height="566" key="new project wizard" timestamp="1579353533051">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="118" y="131" width="1246" height="566" key="new project wizard/0.23.1440.797@0.23.1440.797" timestamp="1578911426359" />
-    <state x="394" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1579347649323">
+    <state x="118" y="131" width="1246" height="566" key="new project wizard/0.23.1440.797@0.23.1440.797" timestamp="1579353533051" />
+    <state x="394" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1579354987077">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="394" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1579347649323" />
+    <state x="394" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1579354987077" />
   </component>
 </project>

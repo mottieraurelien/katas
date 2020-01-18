@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" filepath="$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" />
       <module fileurl="file://$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" filepath="$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" />
       <module fileurl="file://$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" filepath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/016_bank_account/016_bank_account.iml" filepath="$PROJECT_DIR$/016_bank_account/016_bank_account.iml" />
     </modules>
   </component>
 </project>

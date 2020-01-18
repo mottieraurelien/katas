@@ -31,6 +31,7 @@
         <option value="$PROJECT_DIR$/014_redis_twitter/pom.xml" />
         <option value="$PROJECT_DIR$/015_REST/pom.xml" />
         <option value="$PROJECT_DIR$/015_atelier_rest_richardson/pom.xml" />
+        <option value="$PROJECT_DIR$/016_bank_account/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
