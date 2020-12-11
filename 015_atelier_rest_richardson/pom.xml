@@ -18,7 +18,7 @@
     <properties>
 	
 		<!-- Project settings -->
-		<java.version>12</java.version>
+		<java.version>11</java.version>
 		<source.encoding>UTF-8</source.encoding>
 		
 		<!-- Project dependencies -->
@@ -86,7 +86,7 @@
         </dependency>
     </dependencies>
 	
-	    <build>
+    <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>

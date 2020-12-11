@@ -15,7 +15,7 @@
     <properties>
 
         <!-- Project properties -->
-        <java.version>13</java.version>
+        <java.version>11</java.version>
         <encoding.type>UTF-8</encoding.type>
 
         <!-- Dependencies -->
