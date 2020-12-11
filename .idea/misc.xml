@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/000_treasures_hunt/pom.xml" />
+        <option value="$PROJECT_DIR$/001_in-memory-db-demo-application/pom.xml" />
+        <option value="$PROJECT_DIR$/002_gs-accessing-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/003_thejavageek-jpa-entities/pom.xml" />
+        <option value="$PROJECT_DIR$/004_string-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/005_projet-panda/pom.xml" />
+        <option value="$PROJECT_DIR$/006_design-patterns/pom.xml" />
+        <option value="$PROJECT_DIR$/007_hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/008_monopoly/pom.xml" />
+        <option value="$PROJECT_DIR$/008_monopoly_event_sourcing/pom.xml" />
+        <option value="$PROJECT_DIR$/009_dropwizard_hello_world/pom.xml" />
+        <option value="$PROJECT_DIR$/010_dropwizard_parts/pom.xml" />
+        <option value="$PROJECT_DIR$/011_dropwizard_blog_mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/012_generics/pom.xml" />
+        <option value="$PROJECT_DIR$/013_bataille_jeu_de_carte/pom.xml" />
+        <option value="$PROJECT_DIR$/014_redis_twitter/pom.xml" />
+        <option value="$PROJECT_DIR$/015_atelier_rest_richardson/pom.xml" />
+        <option value="$PROJECT_DIR$/016_bank_account/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="corretto-11" project-jdk-type="JavaSDK" />
 </project>
