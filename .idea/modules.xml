@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" filepath="$PROJECT_DIR$/000_treasures_hunt/000_treasures_hunt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/001_in-memory-db-demo-application/001_in-memory-db-demo-application.iml" filepath="$PROJECT_DIR$/001_in-memory-db-demo-application/001_in-memory-db-demo-application.iml" />
-      <module fileurl="file://$PROJECT_DIR$/002_gs-accessing-data-jpa/002_gs-accessing-data-jpa.iml" filepath="$PROJECT_DIR$/002_gs-accessing-data-jpa/002_gs-accessing-data-jpa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/003_thejavageek-jpa-entities/003_thejavageek-jpa-entities.iml" filepath="$PROJECT_DIR$/003_thejavageek-jpa-entities/003_thejavageek-jpa-entities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/004_string-calculator/004_string-calculator.iml" filepath="$PROJECT_DIR$/004_string-calculator/004_string-calculator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/005_projet-panda/005_projet-panda.iml" filepath="$PROJECT_DIR$/005_projet-panda/005_projet-panda.iml" />
-      <module fileurl="file://$PROJECT_DIR$/006_design-patterns/006_design-patterns.iml" filepath="$PROJECT_DIR$/006_design-patterns/006_design-patterns.iml" />
-      <module fileurl="file://$PROJECT_DIR$/007_hibernate/007_hibernate.iml" filepath="$PROJECT_DIR$/007_hibernate/007_hibernate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/008_monopoly/008_monopoly.iml" filepath="$PROJECT_DIR$/008_monopoly/008_monopoly.iml" />
-      <module fileurl="file://$PROJECT_DIR$/008_monopoly_event_sourcing/008_monopoly_event_sourcing.iml" filepath="$PROJECT_DIR$/008_monopoly_event_sourcing/008_monopoly_event_sourcing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/009_dropwizard_hello_world/009_dropwizard_hello_world.iml" filepath="$PROJECT_DIR$/009_dropwizard_hello_world/009_dropwizard_hello_world.iml" />
-      <module fileurl="file://$PROJECT_DIR$/010_dropwizard_parts/010_dropwizard_parts.iml" filepath="$PROJECT_DIR$/010_dropwizard_parts/010_dropwizard_parts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/011_dropwizard_blog_mongo/011_dropwizard_blog_mongo.iml" filepath="$PROJECT_DIR$/011_dropwizard_blog_mongo/011_dropwizard_blog_mongo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/012_generics/012_generics.iml" filepath="$PROJECT_DIR$/012_generics/012_generics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" filepath="$PROJECT_DIR$/013_bataille_jeu_de_carte/013_bataille_jeu_de_carte.iml" />
-      <module fileurl="file://$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" filepath="$PROJECT_DIR$/014_redis_twitter/014_redis_twitter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" filepath="$PROJECT_DIR$/015_atelier_rest_richardson/015_atelier_rest_richardson.iml" />
-      <module fileurl="file://$PROJECT_DIR$/016_bank_account/016_bank_account.iml" filepath="$PROJECT_DIR$/016_bank_account/016_bank_account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/katas.iml" filepath="$PROJECT_DIR$/.idea/katas.iml" />
     </modules>
   </component>
 </project>
