@@ -19,7 +19,7 @@
 		
 		<!-- Project dependencies -->
 		<lombok.version>1.18.8</lombok.version>
-        <jackson.version>2.9.9</jackson.version>
+        <jackson.version>2.12.1</jackson.version>
 
         <!-- Projet plugins -->
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
