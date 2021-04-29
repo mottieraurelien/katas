@@ -7,18 +7,19 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.params.provider.Arguments.of;
 
-public class StringCalculatorTest {
+class StringCalculatorTest {
 
     @Test
-    public void givenAnEmptyStringReturnsZero() {
+    void given_an_empty_string_returns_zero() {
 
         // Arrange
-        String input = "";
-        int expected = 0;
+        final String input = "";
+        final int expected = 0;
 
         // Act
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
 
         // Assert
         assertEquals(expected, actual);
@@ -26,70 +27,70 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void given_one_number_as_string_returns_the_number() {
+    void given_one_number_as_string_returns_the_number() {
 
-        String input = "10";
-        int expected = 10;
+        final String input = "10";
+        final int expected = 10;
 
-        int actual = StringCalculator.add(input);
-
-        assertEquals(expected, actual);
-
-    }
-
-    @Test
-    public void given_two_numbers_as_string_returns_the_sum() {
-
-        String input = "1,2";
-        int expected = 3;
-
-        int actual = StringCalculator.add(input);
-
-        assertEquals(expected, actual);
-
-
-    }
-
-    @Test
-    public void given_an_unknown_amount_of_numbers_returns_the_sum() {
-
-        String input = "2,3,4,5";
-        int expected = 14;
-
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    public void given_new_line_character_behaves_as_a_separator() {
+    void given_two_numbers_as_string_returns_the_sum() {
 
-        String input = "1\n2,3";
-        int expected = 6;
+        final String input = "1,2";
+        final int expected = 3;
 
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
+
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    void given_an_unknown_amount_of_numbers_returns_the_sum() {
+
+        final String input = "2,3,4,5";
+        final int expected = 14;
+
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    public void given_a_different_delimiter_as_a_separator() {
+    void given_new_line_character_behaves_as_a_separator() {
 
-        String input = "//;\n1;2,3";
-        int expected = 6;
+        final String input = "1\n2,3";
+        final int expected = 6;
 
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    public void given_a_negative_number_throws_an_exception() {
+    void given_a_different_delimiter_as_a_separator() {
 
-        String input = "-1";
+        final String input = "//;\n1;2,3";
+        final int expected = 6;
+
+        final int actual = StringCalculator.add(input);
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void given_a_negative_number_throws_an_exception() {
+
+        final String input = "-1";
 
         try {
 
@@ -103,9 +104,9 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void given_multiple_negative_numbers_throws_them_in_the_exception_message() {
+    void given_multiple_negative_numbers_throws_them_in_the_exception_message() {
 
-        String input = "-1,-2";
+        final String input = "-1,-2";
 
         try {
 
@@ -119,48 +120,48 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void given_numbers_exceed_thousand_are_ignored() {
+    void given_numbers_exceed_thousand_are_ignored() {
 
-        String input = "2,1001";
-        int expected = 2;
+        final String input = "2,1001";
+        final int expected = 2;
 
-        int actual = StringCalculator.add(input);
-
-        assertEquals(expected, actual);
-
-    }
-
-    @Test
-    public void given_different_delimiters_with_various_length_as_a_separator() {
-
-        String input = "//[***]\n1***2,3";
-        int expected = 6;
-
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    public void given_two_delimiters_as_a_separator() {
+    void given_different_delimiters_with_various_length_as_a_separator() {
 
-        String input = "//[*][%]\n1*2%3";
-        int expected = 6;
+        final String input = "//[***]\n1***2,3";
+        final int expected = 6;
 
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    public void given_multiple_delimiters_with_various_length_as_a_separator() {
+    void given_two_delimiters_as_a_separator() {
 
-        String input = "//[***][$][%%]\n1***2%%1$3";
-        int expected = 7;
+        final String input = "//[*][%]\n1*2%3";
+        final int expected = 6;
 
-        int actual = StringCalculator.add(input);
+        final int actual = StringCalculator.add(input);
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void given_multiple_delimiters_with_various_length_as_a_separator() {
+
+        final String input = "//[***][$][%%]\n1***2%%1$3";
+        final int expected = 7;
+
+        final int actual = StringCalculator.add(input);
 
         assertEquals(expected, actual);
 
@@ -186,16 +187,16 @@ public class StringCalculatorTest {
      */
     private static Stream<Arguments> getScenariosForNominalFlows() {
         return Stream.of(
-                Arguments.of("", 0),
-                Arguments.of("10", 10),
-                Arguments.of("1,2", 3),
-                Arguments.of("2,3,4,5", 14),
-                Arguments.of("1\n2,3", 6),
-                Arguments.of("//;\n1;2,3", 6),
-                Arguments.of("2,1001", 2),
-                Arguments.of("//[***]\n1***2,3", 6),
-                Arguments.of("//[*][%]\n1*2%3", 6),
-                Arguments.of("//[***][$][%%]\n1***2%%1$3", 7)
+                of("", 0),
+                of("10", 10),
+                of("1,2", 3),
+                of("2,3,4,5", 14),
+                of("1\n2,3", 6),
+                of("//;\n1;2,3", 6),
+                of("2,1001", 2),
+                of("//[***]\n1***2,3", 6),
+                of("//[*][%]\n1*2%3", 6),
+                of("//[***][$][%%]\n1***2%%1$3", 7)
         );
     }
 
