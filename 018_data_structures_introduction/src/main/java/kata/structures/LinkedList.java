@@ -1,5 +1,7 @@
 package kata.structures;
 
+import kata.data.Node;
+
 import java.util.NoSuchElementException;
 
 import static java.lang.reflect.Array.newInstance;
@@ -16,18 +18,23 @@ public class LinkedList<T> {
         this.itemClass = itemClass;
     }
 
-    public void addLast(final T item) {
-
-        final Node<T> newLastNode = new Node<>(item, null);
+    public void addLast(final Node<T> node) {
 
         if (this.first == null) {
-            this.first = this.last = newLastNode;
+            this.first = this.last = node;
         } else {
-            this.last.update(newLastNode);
-            this.last = newLastNode;
+            this.last.update(node);
+            this.last = node;
         }
 
         this.size++;
+
+    }
+
+    public void addLast(final T item) {
+
+        final Node<T> newLastNode = new Node<>(item, null);
+        this.addLast(newLastNode);
 
     }
 
@@ -136,6 +143,92 @@ public class LinkedList<T> {
         }
 
         this.first = previousNode;
+
+    }
+
+    public T getKthFromTheBeginning(final int kth) {
+
+        if (kth < 1 || kth > this.size() || isEmpty()) return null;
+
+        Node<T> mainLead = this.first;
+
+        for (int i = 0; i < kth - 1; i++) {
+            mainLead = mainLead.getNext();
+        }
+
+        return mainLead.getValue();
+
+    }
+
+    public T getKthFromTheEnd(final int kth) {
+
+        if (kth < 1 || kth > this.size || isEmpty()) return null;
+
+        // Both nodes start from the beginning :
+        Node<T> mainLead = this.first;
+        Node<T> referenceTail = this.first;
+
+        // We need to move the tail so that we have a gap of "kth" nodes between our lead and our tail :
+        for (int i = 0; i < kth - 1; i++) {
+            referenceTail = referenceTail.getNext();
+        }
+        // As this moment, we have :
+        //  * our mainLead still at the first position,
+        //  * our referenceTail "kth" nodes far from the mainLead.
+        // If kth is 2 for instance, then mainLead[0] and referenceTail[2], and there is one node between them (1);
+
+        // Now, our goal is to :
+        //  * keep this distance between mainLead and referenceTail,
+        //  * move our referenceTail until our referenceTail reaches the last node of our list.
+        while (referenceTail != this.last) {
+            mainLead = mainLead.getNext();
+            referenceTail = referenceTail.getNext();
+        }
+        // If kth is 2 for instance then :
+        //  * referenceTail is now at the end,
+        //  * and mainLead at the position we wanted it to be.
+
+        return mainLead.getValue();
+
+    }
+
+    @SuppressWarnings("unchecked")
+    public Node<T>[] getMiddleNodes() {
+
+        if (isEmpty()) return null;
+
+        Node<T> lead = this.first;
+        Node<T> tail = this.first;
+
+        while (tail != this.last && tail.getNext() != this.last) {
+            lead = lead.getNext();
+            tail = tail.getNext().getNext();
+        }
+
+        if (tail == this.last) {
+            return new Node[]{lead};
+        }
+
+        return new Node[]{lead, lead.getNext()};
+
+    }
+
+    public boolean isLooping() {
+
+        if (isEmpty()) return false;
+
+        Node<T> slowPointer = this.first;
+        Node<T> fastPointer = slowPointer.getNext();
+
+        while (slowPointer.getNext() != null) {
+            if (slowPointer == fastPointer) {
+                return true;
+            }
+            slowPointer = slowPointer.getNext();
+            fastPointer = fastPointer.getNext().getNext();
+        }
+
+        return false;
 
     }
 

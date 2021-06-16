@@ -1,4 +1,4 @@
-package kata.structures;
+package kata.data;
 
 public class Node<T> {
 

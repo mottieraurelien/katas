@@ -1,5 +1,6 @@
 package kata.structures;
 
+import kata.data.Node;
 import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
@@ -375,6 +376,253 @@ class LinkedListTest {
         assertThat(actualFifthNode).isEqualTo(actualLastNode);
 
         assertThat(linkedList.size()).isEqualTo(5);
+
+    }
+
+    @Test
+    void should_return_fifty_when_finding_the_kth_item_one_from_the_end() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheEnd(1);
+
+        // [Assert]
+        assertThat(actualValue).isEqualTo(50);
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_end_that_is_too_high() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheEnd(10);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_end_that_is_zero() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheEnd(0);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_end_that_is_negative() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheEnd(-1);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+
+    @Test
+    void should_return_ten_when_finding_the_kth_item_one_from_the_beginning() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheBeginning(1);
+
+        // [Assert]
+        assertThat(actualValue).isEqualTo(10);
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_too_high() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheBeginning(10);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_zero() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheBeginning(0);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+    @Test
+    void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_negative() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheBeginning(-1);
+
+        // [Assert]
+        assertThat(actualValue).isNull();
+
+    }
+
+    @Test
+    void should_return_one_node_when_finding_the_middle_of_a_linked_list_with_an_odd_size() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Node<Integer>[] actualMiddleNodes = linkedList.getMiddleNodes();
+
+        // [Assert]
+        assertThat(actualMiddleNodes).hasSize(1);
+        final Node<Integer> uniqueMiddleNode = actualMiddleNodes[0];
+        assertThat(uniqueMiddleNode).isNotNull();
+        assertThat(uniqueMiddleNode.getValue()).isEqualTo(30);
+
+    }
+
+    @Test
+    void should_return_two_nodes_when_finding_the_middle_of_a_linked_list_with_an_even_size() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+        linkedList.addLast(60);
+
+        // [Act]
+        final Node<Integer>[] actualMiddleNodes = linkedList.getMiddleNodes();
+
+        // [Assert]
+        assertThat(actualMiddleNodes).hasSize(2);
+        final Node<Integer> firstMiddleNode = actualMiddleNodes[0];
+        final Node<Integer> secondMiddleNode = actualMiddleNodes[1];
+        assertThat(firstMiddleNode).isNotNull();
+        assertThat(secondMiddleNode).isNotNull();
+        assertThat(firstMiddleNode.getValue()).isEqualTo(30);
+        assertThat(secondMiddleNode.getValue()).isEqualTo(40);
+
+    }
+
+    @Test
+    void should_return_true_if_the_linked_list_has_a_loop() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final Node<Integer> firstNode = new Node<>(10, null);
+        final Node<Integer> secondNode = new Node<>(20, null);
+        final Node<Integer> thirdNode = new Node<>(30, null);
+        final Node<Integer> fourthNode = new Node<>(40, null);
+        // Our loop on the last node :
+        final Node<Integer> fifthNode = new Node<>(50, thirdNode);
+        linkedList.addLast(firstNode);
+        linkedList.addLast(secondNode);
+        linkedList.addLast(thirdNode);
+        linkedList.addLast(fourthNode);
+        linkedList.addLast(fifthNode);
+
+        // [Act]
+        final boolean actual = linkedList.isLooping();
+
+        // [Assert]
+        assertThat(actual).isTrue();
+
+    }
+
+    void should_return_false_if_the_linked_list_has_an_end() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final Node<Integer> firstNode = new Node<>(10, null);
+        final Node<Integer> secondNode = new Node<>(20, null);
+        final Node<Integer> thirdNode = new Node<>(30, null);
+        final Node<Integer> fourthNode = new Node<>(40, null);
+        linkedList.addLast(firstNode);
+        linkedList.addLast(secondNode);
+        linkedList.addLast(thirdNode);
+        linkedList.addLast(fourthNode);
+
+        // [Act]
+        final boolean actual = linkedList.isLooping();
+
+        // [Assert]
+        assertThat(actual).isFalse();
 
     }
 
