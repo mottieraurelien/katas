@@ -220,12 +220,12 @@ public class LinkedList<T> {
         Node<T> slowPointer = this.first;
         Node<T> fastPointer = slowPointer.getNext();
 
-        while (slowPointer.getNext() != null) {
-            if (slowPointer == fastPointer) {
-                return true;
-            }
+        boolean endNotReachedYet = slowPointer.getNext() != null && fastPointer != null && fastPointer.getNext() != null;
+        while (endNotReachedYet) {
+            if (slowPointer == fastPointer) return true;
             slowPointer = slowPointer.getNext();
             fastPointer = fastPointer.getNext().getNext();
+            endNotReachedYet = slowPointer.getNext() != null && fastPointer != null && fastPointer.getNext() != null;
         }
 
         return false;

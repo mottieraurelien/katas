@@ -399,6 +399,25 @@ class LinkedListTest {
     }
 
     @Test
+    void should_return_twenty_when_finding_the_kth_item_four_from_the_end() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheEnd(4);
+
+        // [Assert]
+        assertThat(actualValue).isEqualTo(20);
+
+    }
+
+    @Test
     void should_return_null_when_finding_a_kth_item_from_the_end_that_is_too_high() {
 
         // [Arrange]
@@ -455,7 +474,6 @@ class LinkedListTest {
 
     }
 
-
     @Test
     void should_return_ten_when_finding_the_kth_item_one_from_the_beginning() {
 
@@ -472,6 +490,25 @@ class LinkedListTest {
 
         // [Assert]
         assertThat(actualValue).isEqualTo(10);
+
+    }
+
+    @Test
+    void should_return_thirty_when_finding_the_kth_item_two_from_the_beginning() {
+
+        // [Arrange]
+        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addLast(50);
+
+        // [Act]
+        final Integer actualValue = linkedList.getKthFromTheBeginning(3);
+
+        // [Assert]
+        assertThat(actualValue).isEqualTo(30);
 
     }
 
@@ -605,6 +642,7 @@ class LinkedListTest {
 
     }
 
+    @Test
     void should_return_false_if_the_linked_list_has_an_end() {
 
         // [Arrange]
