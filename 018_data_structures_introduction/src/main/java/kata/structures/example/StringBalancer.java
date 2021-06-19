@@ -12,7 +12,6 @@ import static java.util.Arrays.asList;
 
 public class StringBalancer {
 
-
     private static final Map<Character, Character> SPECIAL_CHARS = new HashMap<>();
 
     static {

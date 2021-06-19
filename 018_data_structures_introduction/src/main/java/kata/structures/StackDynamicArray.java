@@ -56,6 +56,10 @@ public class StackDynamicArray<T> {
         return this.nextFreeIndex == 0;
     }
 
+    public boolean isNotEmpty() {
+        return !this.isEmpty();
+    }
+
     private boolean mustGrow() {
         return this.nextFreeIndex >= this.items.length;
     }
