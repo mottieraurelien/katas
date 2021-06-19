@@ -6,8 +6,8 @@ public class CircularArrayQueue<T> {
     private int freeIndex;
 
     private int count;
-    private int maxSize;
     private final T[] items;
+    private final int maxSize;
 
     @SuppressWarnings("unchecked")
     public CircularArrayQueue(final Integer initialCapacity) {
