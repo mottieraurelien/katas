@@ -18,7 +18,7 @@ public class Node<T> {
         return this.next;
     }
 
-    public void update(final Node<T> newNextNode) {
+    public void point(final Node<T> newNextNode) {
         this.next = newNextNode;
     }
 

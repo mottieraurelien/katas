@@ -322,9 +322,10 @@ class LinkedListTest {
 
         // [Assert]
         assertThat(actualArray).isNotNull();
-        assertThat(actualArray)
-                .extracting("value")
-                .containsExactly(5, 10, 20);
+        assertThat(actualArray).hasSize(3);
+        assertThat(actualArray[0]).isEqualTo(5);
+        assertThat(actualArray[1]).isEqualTo(10);
+        assertThat(actualArray[2]).isEqualTo(20);
 
     }
 

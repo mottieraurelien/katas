@@ -23,7 +23,7 @@ public class LinkedList<T> {
         if (this.first == null) {
             this.first = this.last = node;
         } else {
-            this.last.update(node);
+            this.last.point(node);
             this.last = node;
         }
 
@@ -61,7 +61,7 @@ public class LinkedList<T> {
             while (nextNode.getNext() != this.last) {
                 nextNode = nextNode.getNext();
             }
-            nextNode.update(null);
+            nextNode.point(null);
             this.last = nextNode;
         }
 
@@ -134,7 +134,7 @@ public class LinkedList<T> {
 
         Node<T> previousNode = this.first;
         Node<T> currentNode = previousNode.getNext();
-        previousNode.update(null);
+        previousNode.point(null);
         this.last = previousNode;
 
         while (currentNode != null) {
