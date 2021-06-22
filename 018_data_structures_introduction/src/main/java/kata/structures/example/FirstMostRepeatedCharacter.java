@@ -18,7 +18,7 @@ public class FirstMostRepeatedCharacter<T> {
     }
 
     /**
-     * It was just an exercise that forced me to use a map to solve this problem.
+     * O(n) It was just an exercise that forced me to use a map to solve this problem.
      */
     public T find() {
 
