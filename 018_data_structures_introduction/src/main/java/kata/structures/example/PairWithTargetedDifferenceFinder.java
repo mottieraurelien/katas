@@ -21,9 +21,9 @@ public class PairWithTargetedDifferenceFinder<T extends Number> {
      */
     public Set<Pair<T, T>> find(final int targetedDifference) {
 
-        final Set<Pair<T, T>> pairs = new HashSet<>();
-
         sort(this.inputs);
+
+        final Set<Pair<T, T>> pairs = new HashSet<>();
 
         for (final T input : inputs) {
             for (final T current : inputs) {
