@@ -14,7 +14,7 @@ class LinkedListTest {
     void should_add_the_item_at_the_first_position_when_adding_an_item_to_the_last_position_in_an_empty_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
 
         // [Act]
         linkedList.addLast(5);
@@ -33,7 +33,7 @@ class LinkedListTest {
     void should_append_the_item_to_the_linked_list_when_adding_the_item_at_last_position() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
 
@@ -57,7 +57,7 @@ class LinkedListTest {
     void should_add_the_item_at_the_first_position_when_adding_an_item_to_the_first_position_in_an_empty_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
 
         // [Act]
         linkedList.addFirst(5);
@@ -76,7 +76,7 @@ class LinkedListTest {
     void should_add_the_item_to_the_beginning_of_the_linked_list_when_adding_the_item_at_first_position() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
 
@@ -100,7 +100,7 @@ class LinkedListTest {
     void should_throw_an_exception_when_trying_to_removing_the_first_item_from_an_empty_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
 
         // [Act / Assert]
         assertThatThrownBy(linkedList::removeFirst)
@@ -113,7 +113,7 @@ class LinkedListTest {
     void should_remove_the_item_at_the_first_position_when_removing_the_only_item_in_an_list_with_only_one_item() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(5);
 
         // [Act]
@@ -132,7 +132,7 @@ class LinkedListTest {
     void should_remove_the_item_at_the_first_position_when_removing_the_first_item_of_a_populated_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(5);
         linkedList.addLast(10);
         linkedList.addLast(15);
@@ -163,7 +163,7 @@ class LinkedListTest {
     void should_throw_an_exception_when_trying_to_remove_the_last_item_from_an_empty_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
 
         // [Act / Assert]
         assertThatThrownBy(linkedList::removeLast)
@@ -176,7 +176,7 @@ class LinkedListTest {
     void should_remove_the_item_at_the_last_position_when_removing_the_only_item_in_an_list_with_only_one_item() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
 
         // [Act]
@@ -195,7 +195,7 @@ class LinkedListTest {
     void should_remove_the_item_at_the_last_position_when_removing_the_last_item_of_a_populated_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(30);
         linkedList.addFirst(20);
         linkedList.addFirst(15);
@@ -229,7 +229,7 @@ class LinkedListTest {
     void should_return_false_when_the_list_does_not_contain_the_item() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
         linkedList.addLast(10);
         linkedList.addLast(20);
@@ -246,7 +246,7 @@ class LinkedListTest {
     void should_return_true_when_the_list_contains_the_item() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
         linkedList.addLast(10);
         linkedList.addLast(20);
@@ -263,7 +263,7 @@ class LinkedListTest {
     void should_return_minus_one_when_finding_the_index_of_an_item_that_is_not_in_the_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
         linkedList.addLast(10);
         linkedList.addLast(20);
@@ -280,7 +280,7 @@ class LinkedListTest {
     void should_return_the_right_index_when_finding_the_index_of_an_item_that_is_in_the_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
         linkedList.addLast(10);
         linkedList.addLast(20);
@@ -294,54 +294,21 @@ class LinkedListTest {
     }
 
     @Test
-    void should_return_an_empty_array_when_the_linked_list_is_empty() {
-
-        // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
-
-        // [Act]
-        final Integer[] actualArray = linkedList.values();
-
-        // [Assert]
-        assertThat(actualArray).isNotNull();
-        assertThat(actualArray).isEmpty();
-
-    }
-
-    @Test
-    void should_return_a_populated_array_when_the_linked_list_contains_a_node_at_least() {
-
-        // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
-        linkedList.addFirst(5);
-        linkedList.addLast(10);
-        linkedList.addLast(20);
-
-        // [Act]
-        final Integer[] actualArray = linkedList.values();
-
-        // [Assert]
-        assertThat(actualArray).isNotNull();
-        assertThat(actualArray).hasSize(3);
-        assertThat(actualArray[0]).isEqualTo(5);
-        assertThat(actualArray[1]).isEqualTo(10);
-        assertThat(actualArray[2]).isEqualTo(20);
-
-    }
-
-    @Test
     void should_not_do_anything_when_reversing_an_empty_linked_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
+        Node<Integer> first = linkedList.getFirst();
+        Node<Integer> last = linkedList.getLast();
+        assertThat(first).isEqualTo(last).isNull();
 
         // [Act]
         linkedList.reverse();
 
         // [Assert]
-        final Integer[] actualArray = linkedList.values();
-        assertThat(actualArray).isNotNull();
-        assertThat(actualArray).isEmpty();
+        first = linkedList.getFirst();
+        last = linkedList.getLast();
+        assertThat(first).isEqualTo(last).isNull();
 
     }
 
@@ -349,7 +316,7 @@ class LinkedListTest {
     void should_move_all_items_when_reversing_a_populated_linked_list() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addFirst(5);
         linkedList.addLast(10);
         linkedList.addLast(20);
@@ -384,7 +351,7 @@ class LinkedListTest {
     void should_return_fifty_when_finding_the_kth_item_one_from_the_end() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -403,7 +370,7 @@ class LinkedListTest {
     void should_return_twenty_when_finding_the_kth_item_four_from_the_end() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -422,7 +389,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_end_that_is_too_high() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -441,7 +408,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_end_that_is_zero() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -460,7 +427,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_end_that_is_negative() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -479,7 +446,7 @@ class LinkedListTest {
     void should_return_ten_when_finding_the_kth_item_one_from_the_beginning() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -498,7 +465,7 @@ class LinkedListTest {
     void should_return_thirty_when_finding_the_kth_item_two_from_the_beginning() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -517,7 +484,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_too_high() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -536,7 +503,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_zero() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -555,7 +522,7 @@ class LinkedListTest {
     void should_return_null_when_finding_a_kth_item_from_the_beginning_that_is_negative() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -574,7 +541,7 @@ class LinkedListTest {
     void should_return_one_node_when_finding_the_middle_of_a_linked_list_with_an_odd_size() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -596,7 +563,7 @@ class LinkedListTest {
     void should_return_two_nodes_when_finding_the_middle_of_a_linked_list_with_an_even_size() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
@@ -622,7 +589,7 @@ class LinkedListTest {
     void should_return_true_if_the_linked_list_has_a_loop() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         final Node<Integer> firstNode = new Node<>(10, null);
         final Node<Integer> secondNode = new Node<>(20, null);
         final Node<Integer> thirdNode = new Node<>(30, null);
@@ -647,7 +614,7 @@ class LinkedListTest {
     void should_return_false_if_the_linked_list_has_an_end() {
 
         // [Arrange]
-        final LinkedList<Integer> linkedList = new LinkedList<>(Integer.class);
+        final LinkedList<Integer> linkedList = new LinkedList<>();
         final Node<Integer> firstNode = new Node<>(10, null);
         final Node<Integer> secondNode = new Node<>(20, null);
         final Node<Integer> thirdNode = new Node<>(30, null);

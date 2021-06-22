@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>018_data_structure_introduction</groupId>
-    <artifactId>data_structure_introduction</artifactId>
+    <artifactId>018_data_structure_introduction</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

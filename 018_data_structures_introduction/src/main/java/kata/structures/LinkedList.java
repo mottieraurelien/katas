@@ -4,19 +4,11 @@ import kata.data.Node;
 
 import java.util.NoSuchElementException;
 
-import static java.lang.reflect.Array.newInstance;
-
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<T> {
 
     private Node<T> first;
     private Node<T> last;
     private int size;
-
-    private final Class<T> itemClass;
-
-    public LinkedList(final Class<T> itemClass) {
-        this.itemClass = itemClass;
-    }
 
     public void addLast(final Node<T> node) {
 
@@ -108,24 +100,6 @@ public class LinkedList<T> {
 
     public int size() {
         return this.size;
-    }
-
-    @SuppressWarnings("unchecked")
-    public T[] values() {
-
-        final T[] array = (T[]) newInstance(this.itemClass, size);
-
-        if (isEmpty()) return array;
-
-        int index = 0;
-        Node<T> current = this.first;
-        while (current != null) {
-            array[index] = current.getValue();
-            current = current.getNext();
-            index++;
-        }
-
-        return array;
     }
 
     public void reverse() {
@@ -232,8 +206,34 @@ public class LinkedList<T> {
 
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return this.size == 0;
+    }
+
+    public Iterator<T> iterator() {
+        return new Iterator<>(this.first);
+    }
+
+    private static class Iterator<T> implements java.util.Iterator<T> {
+
+        private Node<T> current;
+
+        public Iterator(final Node<T> root) {
+            this.current = root;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return this.current != null;
+        }
+
+        @Override
+        public T next() {
+            final T item = this.current.getValue();
+            this.current = current.getNext();
+            return item;
+        }
+
     }
 
 }

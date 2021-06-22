@@ -1,38 +1,41 @@
 package kata.structures;
 
+import java.util.Comparator;
+
 import static java.lang.System.arraycopy;
 import static java.util.Arrays.copyOf;
 import static java.util.Arrays.stream;
 
-public class DynamicArray {
+public class DynamicArray<T> {
 
-    private int[] items;
-    private int nextFreeIndex;
+    private T[] items;
+    private int size;
     private final int initialCapacity;
 
-    public DynamicArray(final int length) {
-        this.initialCapacity = length;
-        this.items = new int[length];
-        this.nextFreeIndex = 0;
+    @SuppressWarnings("unchecked")
+    public DynamicArray(final int initialCapacity) {
+        this.initialCapacity = initialCapacity;
+        this.items = (T[]) new Object[this.initialCapacity];
+        this.size = 0;
     }
 
-    public DynamicArray(final int[] items) {
+    public DynamicArray(final T[] items, final int size) {
         this.initialCapacity = items.length;
         this.items = items;
-        this.nextFreeIndex = items.length;
+        this.size = size;
     }
 
-    public void insert(final int item) {
+    public void insert(final T item) {
 
         if (this.mustGrow()) {
             this.grow();
         }
 
-        this.insertAt(item, this.nextFreeIndex);
+        this.insertAt(item, this.size);
 
     }
 
-    public int indexOf(final int item) {
+    public int indexOf(final T item) {
         for (int i = 0; i <= this.getLastIndex(); i++) {
             if (this.items[i] == item) {
                 return i;
@@ -41,10 +44,11 @@ public class DynamicArray {
         return -1;
     }
 
-    public boolean contains(final int item) {
+    public boolean contains(final T item) {
         return this.indexOf(item) > -1;
     }
 
+    @SuppressWarnings("unchecked")
     public void removeAt(final int index) {
 
         if (index > this.getLastIndex()) {
@@ -52,7 +56,7 @@ public class DynamicArray {
         }
 
         final int newLength = this.getLength();
-        final int[] newItems = new int[newLength];
+        final T[] newItems = (T[]) new Object[newLength];
         int newItemsCounter = 0;
         for (int i = 0; i < this.getLastIndex(); i++) {
             if (i != index) {
@@ -61,50 +65,48 @@ public class DynamicArray {
             }
         }
         this.items = newItems;
-        this.nextFreeIndex--;
+        this.size--;
     }
 
-    public int max() {
+    public T max(final Comparator<T> comparator) {
         return stream(this.items)
-                .max()
+                .max(comparator)
                 .orElseThrow(() -> new UnsupportedOperationException("Could not find any max item."));
     }
 
-    public DynamicArray intersect(final DynamicArray otherNumbers) {
+    @SuppressWarnings("unchecked")
+    public DynamicArray<T> intersect(final DynamicArray<T> otherNumbers) {
 
         // Case 1 : one of them is empty so they cannot have anything in common :
-        if (this.isEmpty() || otherNumbers.isEmpty()) {
-            return new DynamicArray(new int[0]);
-        }
+        if (this.isEmpty() || otherNumbers.isEmpty()) return new DynamicArray<>(0);
 
         // Case 2 : both are not empty, meaning that we need to look over the items...
         // Let's be smart and look over the the smallest array > O(m), m being the number of item in the smallest array.
-        final DynamicArray smallestDynamicArray = this.getLastIndex() < otherNumbers.getLastIndex() ? this : otherNumbers;
-        final DynamicArray biggestDynamicArray = this.getLastIndex() < otherNumbers.getLastIndex() ? otherNumbers : this;
+        final DynamicArray<T> smallestDynamicArray = this.getLastIndex() < otherNumbers.getLastIndex() ? this : otherNumbers;
+        final DynamicArray<T> biggestDynamicArray = this.getLastIndex() < otherNumbers.getLastIndex() ? otherNumbers : this;
 
         // Best scenario : every smallestArray item are in the the biggestArray.
-        final int[] intersectArray = new int[smallestDynamicArray.nextFreeIndex];
+        final T[] intersectArray = (T[]) new Object[smallestDynamicArray.size()];
         int intersectCount = 0;
 
         // Let's look over the items now :
-        for (int i = 0; i <= smallestDynamicArray.getLastIndex(); i++) {
-            final int currentItem = smallestDynamicArray.items[i];
+        for (int i = 0; i < smallestDynamicArray.size(); i++) {
+            final T currentItem = smallestDynamicArray.items[i];
             if (biggestDynamicArray.contains(currentItem)) {
-                intersectArray[intersectCount] = currentItem;
-                intersectCount++;
+                intersectArray[intersectCount++] = currentItem;
             }
         }
 
-        return new DynamicArray(intersectArray);
+        return new DynamicArray<>(intersectArray, intersectCount);
 
     }
 
-    public DynamicArray reverse() {
+    public DynamicArray<T> reverse() {
 
-        final DynamicArray reversedDynamicArray = new DynamicArray(this.nextFreeIndex);
+        final DynamicArray<T> reversedDynamicArray = new DynamicArray<>(this.size);
 
         for (int i = this.getLastIndex(); i >= 0; i--) {
-            final int currentItem = this.items[i];
+            final T currentItem = this.items[i];
             reversedDynamicArray.insert(currentItem);
         }
 
@@ -112,7 +114,7 @@ public class DynamicArray {
 
     }
 
-    public void insertAt(final int item, final int index) {
+    public void insertAt(final T item, final int index) {
 
         if (index >= this.getLength()) {
             throw new IndexOutOfBoundsException("The array is not large enough to welcome the item to insert at this specific index.");
@@ -130,28 +132,28 @@ public class DynamicArray {
         }
 
         this.items[index] = item;
-        this.nextFreeIndex++;
+        this.size++;
 
-    }
-
-    public int[] getItems() {
-        return this.items;
     }
 
     private int getLength() {
         return this.items.length;
     }
 
+    public int size() {
+        return this.size;
+    }
+
     private int getLastIndex() {
-        return this.nextFreeIndex - 1;
+        return this.size - 1;
     }
 
     private boolean isEmpty() {
-        return this.nextFreeIndex == 0;
+        return this.size == 0;
     }
 
     private boolean mustGrow() {
-        return this.nextFreeIndex >= this.getLength();
+        return this.size >= this.getLength();
     }
 
     private void grow() {

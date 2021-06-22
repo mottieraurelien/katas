@@ -13,6 +13,11 @@ public class FirstRepeatedCharacterFinder {
         this.repeatedCharacters = new HashSet<>();
     }
 
+    /**
+     * Alternative : looking over the chars through an index, and compare this index with the
+     * lastIndexOf(theSameChar) : if they are the same it means that the character is unique,
+     * else it means that the current character is repeated.
+     */
     public Character find() {
 
         final char[] characters = this.sentence.toCharArray();

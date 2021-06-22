@@ -14,13 +14,11 @@ class DynamicArrayTest {
         final int inputLength = 3;
 
         // [Act]
-        final DynamicArray actualDynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
 
         // [Assert]
-        assertThat(actualDynamicArray).isNotNull();
-        assertThat(actualDynamicArray.getItems()).isNotNull();
-        assertThat(actualDynamicArray.getItems()).hasSize(inputLength);
-        assertThat(actualDynamicArray.getItems()).containsExactly(0, 0, 0);
+        assertThat(array).isNotNull();
+        assertThat(array.size()).isEqualTo(0);
 
     }
 
@@ -29,16 +27,14 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
 
         // [Act]
-        dynamicArray.insert(10);
+        array.insert(10);
 
         // [Assert]
-        assertThat(dynamicArray).isNotNull();
-        assertThat(dynamicArray.getItems()).isNotNull();
-        assertThat(dynamicArray.getItems()).hasSize(inputLength);
-        assertThat(dynamicArray.getItems()).containsExactly(10, 0, 0);
+        assertThat(array).isNotNull();
+        assertThat(array.size()).isEqualTo(1);
 
     }
 
@@ -47,20 +43,17 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
 
         // [Act]
-        dynamicArray.insert(40);
+        array.insert(40);
 
         // [Assert]
-        assertThat(dynamicArray).isNotNull();
-        assertThat(dynamicArray.getItems()).isNotNull();
-        final int expectedLength = inputLength + inputLength;
-        assertThat(dynamicArray.getItems()).hasSize(expectedLength);
-        assertThat(dynamicArray.getItems()).containsExactly(10, 20, 30, 40, 0, 0);
+        assertThat(array).isNotNull();
+        assertThat(array.size()).isEqualTo(4);
 
     }
 
@@ -69,21 +62,18 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
-        dynamicArray.insert(40);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
+        array.insert(40);
 
         // [Act]
-        dynamicArray.removeAt(3);
+        array.removeAt(3);
 
         // [Assert]
-        assertThat(dynamicArray).isNotNull();
-        assertThat(dynamicArray.getItems()).isNotNull();
-        final int expectedLength = inputLength + inputLength;
-        assertThat(dynamicArray.getItems()).hasSize(expectedLength);
-        assertThat(dynamicArray.getItems()).containsExactly(10, 20, 30, 0, 0, 0);
+        assertThat(array).isNotNull();
+        assertThat(array.size()).isEqualTo(3);
 
     }
 
@@ -92,16 +82,16 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
-        dynamicArray.insert(40);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
+        array.insert(40);
         final int lastIndex = 3;
 
         // [Act / Assert]
         final int wrongIndex = 100;
-        assertThatThrownBy(() -> dynamicArray.removeAt(wrongIndex))
+        assertThatThrownBy(() -> array.removeAt(wrongIndex))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Index must be between [0," + lastIndex + "[.");
 
@@ -112,13 +102,13 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
 
         // [Act]
-        final int actualIndex = dynamicArray.indexOf(10);
+        final int actualIndex = array.indexOf(10);
 
         // [Assert]
         assertThat(actualIndex).isEqualTo(0);
@@ -130,13 +120,13 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
 
         // [Act]
-        final int actualIndex = dynamicArray.indexOf(100);
+        final int actualIndex = array.indexOf(100);
 
         // [Assert]
         assertThat(actualIndex).isEqualTo(-1);
@@ -148,14 +138,14 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(20);
-        dynamicArray.insert(50);
-        dynamicArray.insert(80);
-        dynamicArray.insert(60);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(20);
+        array.insert(50);
+        array.insert(80);
+        array.insert(60);
 
         // [Act]
-        final int actualMax = dynamicArray.max();
+        final int actualMax = array.max(Integer::compareTo);
 
         // [Assert]
         assertThat(actualMax).isEqualTo(80);
@@ -167,19 +157,19 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
         dynamicArray.insert(60);
-        final DynamicArray emptyDynamicArray = new DynamicArray(0);
+        final DynamicArray<Integer> emptyDynamicArray = new DynamicArray<>(0);
 
         // [Act]
-        final DynamicArray actualDynamicArray = dynamicArray.intersect(emptyDynamicArray);
+        final DynamicArray<Integer> intersect = dynamicArray.intersect(emptyDynamicArray);
 
         // [Assert]
-        assertThat(actualDynamicArray).isNotNull();
-        assertThat(actualDynamicArray.getItems()).isEmpty();
+        assertThat(intersect).isNotNull();
+        assertThat(intersect.size()).isEqualTo(0);
 
     }
 
@@ -188,19 +178,19 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
         dynamicArray.insert(60);
-        final DynamicArray emptyDynamicArray = new DynamicArray(0);
+        final DynamicArray<Integer> emptyDynamicArray = new DynamicArray<>(0);
 
         // [Act]
-        final DynamicArray actualDynamicArray = emptyDynamicArray.intersect(dynamicArray);
+        final DynamicArray<Integer> intersect = emptyDynamicArray.intersect(dynamicArray);
 
         // [Assert]
-        assertThat(actualDynamicArray).isNotNull();
-        assertThat(actualDynamicArray.getItems()).isEmpty();
+        assertThat(intersect).isNotNull();
+        assertThat(intersect.size()).isEqualTo(0);
 
     }
 
@@ -208,13 +198,12 @@ class DynamicArrayTest {
     void should_return_an_array_with_common_items_only_when_intersecting_two_populated_arrays() {
 
         // [Arrange]
-        final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(4);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
         dynamicArray.insert(60);
-        final DynamicArray anotherDynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> anotherDynamicArray = new DynamicArray<>(7);
         anotherDynamicArray.insert(10);
         anotherDynamicArray.insert(20);
         anotherDynamicArray.insert(30);
@@ -224,12 +213,20 @@ class DynamicArrayTest {
         anotherDynamicArray.insert(70);
 
         // [Act]
-        final DynamicArray actualDynamicArray = anotherDynamicArray.intersect(dynamicArray);
+        final DynamicArray<Integer> intersect = anotherDynamicArray.intersect(dynamicArray);
 
         // [Assert]
-        assertThat(actualDynamicArray).isNotNull();
-        assertThat(actualDynamicArray.getItems()).hasSize(inputLength);
-        assertThat(actualDynamicArray.getItems()).containsExactly(20, 50, 60, 0);
+        assertThat(intersect).isNotNull();
+        assertThat(intersect.size()).isEqualTo(3);
+        assertThat(intersect.indexOf(20)).isEqualTo(0);
+        assertThat(intersect.indexOf(50)).isEqualTo(1);
+        assertThat(intersect.indexOf(60)).isEqualTo(2);
+
+        assertThat(intersect.contains(10)).isFalse();
+        assertThat(intersect.contains(30)).isFalse();
+        assertThat(intersect.contains(40)).isFalse();
+        assertThat(intersect.contains(70)).isFalse();
+        assertThat(intersect.contains(80)).isFalse();
 
     }
 
@@ -238,19 +235,22 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
         dynamicArray.insert(60);
 
         // [Act]
-        final DynamicArray actualDynamicArray = dynamicArray.reverse();
+        final DynamicArray<Integer> reversed = dynamicArray.reverse();
 
         // [Assert]
-        assertThat(actualDynamicArray).isNotNull();
-        assertThat(actualDynamicArray.getItems()).hasSize(4);
-        assertThat(actualDynamicArray.getItems()).containsExactly(60, 80, 50, 20);
+        assertThat(reversed).isNotNull();
+        assertThat(reversed.size()).isEqualTo(4);
+        assertThat(reversed.indexOf(60)).isEqualTo(0);
+        assertThat(reversed.indexOf(80)).isEqualTo(1);
+        assertThat(reversed.indexOf(50)).isEqualTo(2);
+        assertThat(reversed.indexOf(20)).isEqualTo(3);
 
     }
 
@@ -259,7 +259,7 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
@@ -268,9 +268,11 @@ class DynamicArrayTest {
         dynamicArray.insertAt(100, 0);
 
         // [Assert]
-        final int[] actualItems = dynamicArray.getItems();
-        assertThat(actualItems).hasSize(4);
-        assertThat(actualItems).containsExactly(100, 20, 50, 80);
+        assertThat(dynamicArray.size()).isEqualTo(4);
+        assertThat(dynamicArray.indexOf(100)).isEqualTo(0);
+        assertThat(dynamicArray.indexOf(20)).isEqualTo(1);
+        assertThat(dynamicArray.indexOf(50)).isEqualTo(2);
+        assertThat(dynamicArray.indexOf(80)).isEqualTo(3);
 
     }
 
@@ -279,7 +281,7 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 2;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
@@ -289,9 +291,12 @@ class DynamicArrayTest {
         dynamicArray.insertAt(100, 0);
 
         // [Assert]
-        final int[] actualItems = dynamicArray.getItems();
-        assertThat(actualItems).hasSize(6);
-        assertThat(actualItems).containsExactly(100, 20, 50, 80, 90, 0);
+        assertThat(dynamicArray.size()).isEqualTo(5);
+        assertThat(dynamicArray.indexOf(100)).isEqualTo(0);
+        assertThat(dynamicArray.indexOf(20)).isEqualTo(1);
+        assertThat(dynamicArray.indexOf(50)).isEqualTo(2);
+        assertThat(dynamicArray.indexOf(80)).isEqualTo(3);
+        assertThat(dynamicArray.indexOf(90)).isEqualTo(4);
 
     }
 
@@ -300,7 +305,7 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 4;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
@@ -309,9 +314,11 @@ class DynamicArrayTest {
         dynamicArray.insertAt(100, 2);
 
         // [Assert]
-        final int[] actualItems = dynamicArray.getItems();
-        assertThat(actualItems).hasSize(4);
-        assertThat(actualItems).containsExactly(20, 50, 100, 80);
+        assertThat(dynamicArray.size()).isEqualTo(4);
+        assertThat(dynamicArray.indexOf(20)).isEqualTo(0);
+        assertThat(dynamicArray.indexOf(50)).isEqualTo(1);
+        assertThat(dynamicArray.indexOf(100)).isEqualTo(2);
+        assertThat(dynamicArray.indexOf(80)).isEqualTo(3);
 
     }
 
@@ -320,7 +327,7 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 2;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
+        final DynamicArray<Integer> dynamicArray = new DynamicArray<>(inputLength);
         dynamicArray.insert(20);
         dynamicArray.insert(50);
         dynamicArray.insert(80);
@@ -330,9 +337,12 @@ class DynamicArrayTest {
         dynamicArray.insertAt(100, 2);
 
         // [Assert]
-        final int[] actualItems = dynamicArray.getItems();
-        assertThat(actualItems).hasSize(6);
-        assertThat(actualItems).containsExactly(20, 50, 100, 80, 90, 0);
+        assertThat(dynamicArray.size()).isEqualTo(5);
+        assertThat(dynamicArray.indexOf(20)).isEqualTo(0);
+        assertThat(dynamicArray.indexOf(50)).isEqualTo(1);
+        assertThat(dynamicArray.indexOf(100)).isEqualTo(2);
+        assertThat(dynamicArray.indexOf(80)).isEqualTo(3);
+        assertThat(dynamicArray.indexOf(90)).isEqualTo(4);
 
     }
 
@@ -341,15 +351,15 @@ class DynamicArrayTest {
 
         // [Arrange]
         final int inputLength = 3;
-        final DynamicArray dynamicArray = new DynamicArray(inputLength);
-        dynamicArray.insert(10);
-        dynamicArray.insert(20);
-        dynamicArray.insert(30);
-        dynamicArray.insert(40);
+        final DynamicArray<Integer> array = new DynamicArray<>(inputLength);
+        array.insert(10);
+        array.insert(20);
+        array.insert(30);
+        array.insert(40);
 
         // [Act / Assert]
         final int wrongIndex = 10;
-        assertThatThrownBy(() -> dynamicArray.insertAt(99, wrongIndex))
+        assertThatThrownBy(() -> array.insertAt(99, wrongIndex))
                 .isInstanceOf(IndexOutOfBoundsException.class)
                 .hasMessage("The array is not large enough to welcome the item to insert at this specific index.");
 
