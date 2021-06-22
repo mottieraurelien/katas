@@ -18,14 +18,6 @@ public class Pair<L, R> {
         return new Pair<>(left, right);
     }
 
-    public L getLeft() {
-        return this.left;
-    }
-
-    public R getRight() {
-        return this.right;
-    }
-
     @Override
     public boolean equals(final Object object) {
         if (this == object) return true;
