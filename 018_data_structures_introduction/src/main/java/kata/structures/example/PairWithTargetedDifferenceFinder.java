@@ -10,10 +10,12 @@ import static kata.data.Pair.of;
 
 public class PairWithTargetedDifferenceFinder<T extends Number> {
 
+    private final int size;
     private final T[] inputs;
 
     public PairWithTargetedDifferenceFinder(final T[] inputs) {
         this.inputs = inputs;
+        this.size = this.inputs.length;
     }
 
     /**
@@ -25,8 +27,10 @@ public class PairWithTargetedDifferenceFinder<T extends Number> {
 
         final Set<Pair<T, T>> pairs = new HashSet<>();
 
-        for (final T input : inputs) {
-            for (final T current : inputs) {
+        for (int i = 0; i < this.size; i++) {
+            final T input = this.inputs[i];
+            for (int j = i; j < this.size; j++) {
+                final T current = this.inputs[j];
                 final int difference = current.intValue() - input.intValue();
                 if (difference == targetedDifference) pairs.add(of(input, current));
             }
