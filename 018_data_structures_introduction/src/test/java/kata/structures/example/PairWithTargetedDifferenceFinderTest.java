@@ -8,17 +8,17 @@ import java.util.Set;
 import static kata.data.Pair.of;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class PairWithDiffCounterTest {
+class PairWithTargetedDifferenceFinderTest {
 
     @Test
     void should_return_pairs_with_the_exact_same_difference() {
 
         // [Arrange]
         final Integer[] inputs = new Integer[]{1, 7, 5, 9, 2, 12, 3};
-        final PairWithDifferenceCounter<Integer> counter = new PairWithDifferenceCounter<>(inputs);
+        final PairWithTargetedDifferenceFinder<Integer> finder = new PairWithTargetedDifferenceFinder<>(inputs);
 
         // [Act]
-        final Set<Pair<Integer, Integer>> actual = counter.count(2);
+        final Set<Pair<Integer, Integer>> actual = finder.find(2);
 
         // [Assert]
         assertThat(actual).hasSize(4);

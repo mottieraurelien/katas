@@ -8,18 +8,18 @@ import java.util.Set;
 import static java.util.Arrays.sort;
 import static kata.data.Pair.of;
 
-public class PairWithDifferenceCounter<T extends Number> {
+public class PairWithTargetedDifferenceFinder<T extends Number> {
 
     private final T[] inputs;
 
-    public PairWithDifferenceCounter(final T[] inputs) {
+    public PairWithTargetedDifferenceFinder(final T[] inputs) {
         this.inputs = inputs;
     }
 
     /**
      * O(n).
      */
-    public Set<Pair<T, T>> count(final int k) {
+    public Set<Pair<T, T>> find(final int targetedDifference) {
 
         final Set<Pair<T, T>> pairs = new HashSet<>();
 
@@ -28,7 +28,7 @@ public class PairWithDifferenceCounter<T extends Number> {
         for (final T input : inputs) {
             for (final T current : inputs) {
                 final int difference = current.intValue() - input.intValue();
-                if (difference == k) pairs.add(of(input, current));
+                if (difference == targetedDifference) pairs.add(of(input, current));
             }
         }
 
