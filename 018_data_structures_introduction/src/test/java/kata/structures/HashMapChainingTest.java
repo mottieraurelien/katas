@@ -11,7 +11,6 @@ class HashMapChainingTest {
     private static final Integer DEFAULT_CAPACITY = 16;
 
     /**
-     * Hashing algorithm (since we are gonna chain the values, this algo does not need to be complex).
      * If needed, to handle negative keys (since we work with integers below) :
      * - [ Math.abs(key) % DEFAULT_CAPACITY ]
      * - [ √(key²) % DEFAULT_CAPACITY ]
